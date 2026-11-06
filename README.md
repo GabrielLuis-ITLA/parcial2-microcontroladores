@@ -17,8 +17,8 @@
 | Pulsador Integrado | `P1_7 (SW2)` | Entrada GPIO, botón en placa. Nivel activo: Bajo. |
 | LED de Actividad | `P3_1 (D2)` | Salida GPIO. Conectado con resistencia limitadora a GND. |
 | LED de Alarma | `P3_31 (D4)` | Salida GPIO. Conectado con resistencia limitadora a GND. |
-| Consola UART (TX) | `P2_10` | Hacia la PC vía MCU-Link. |
-| Consola UART (RX) | `P2_11` | Desde la PC vía MCU-Link. |
+| Consola UART (TX) | `P0_3` | Hacia la PC vía MCU-Link. |
+| Consola UART (RX) | `P0_2` | Desde la PC vía MCU-Link. |
 
 ## 3. Parámetros de Configuración Básica
 * **UART:** 115200 baudios, 8 bits de datos, sin paridad, 1 bit de parada (8N1).
