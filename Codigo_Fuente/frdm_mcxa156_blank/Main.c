@@ -8,10 +8,17 @@
 #include "clock_config.h"
 #include "fsl_reset.h"
 
+#define UMBRAL_REBOTES 30
+#define CTIMER_FREQ_1MS (96000000/1000)
+
 
 volatile uint32_t milisegundos_totales = 0;
 volatile uint8_t contador_rebotes = 0;
 volatile bool boton_presionado = false;
+
+void Init_Hardware_Base(void);
+void Init_Boton_SW2(void);
+void Init_Filtro_Ctimer(void);
 
 void CTIMER0_IRQHandler(void)
 {
@@ -22,11 +29,11 @@ void CTIMER0_IRQHandler(void)
 
     if (GPIO_PinRead(GPIO1, 7) == 0)
     {
-        if (contador_rebotes < 30)
+        if (contador_rebotes < UMBRAL_REBOTES)
         {
             contador_rebotes++;
         }
-        else if (contador_rebotes == 30)
+        else if (contador_rebotes == UMBRAL_REBOTES)
         {
             boton_presionado = true;
             contador_rebotes++;
@@ -40,6 +47,25 @@ void CTIMER0_IRQHandler(void)
 
 int main(void)
 {
+    Init_Hardware_Base();
+    Init_Boton_SW2();
+    Init_Filtro_Ctimer();
+
+    PRINTF("Sistema iniciado. Esperando boton...\r\n");
+
+    while (1)
+    {
+        if (boton_presionado)
+        {
+            PRINTF("Boton presionado!(Filtro Ctimer)\r\n");
+            boton_presionado = false;
+        }
+    }
+}
+  
+
+void Init_Hardware_Base(void)
+{
     BOARD_InitBootPins();
     BOARD_InitBootClocks();
 
@@ -52,12 +78,21 @@ int main(void)
     BOARD_InitDebugConsole();
     PRINTF("Iniciando sistema...\r\n");
 
+}
+
+
+void Init_Boton_SW2(void)
+{
     gpio_pin_config_t sw_config = {
        .pinDirection  = kGPIO_DigitalInput,
        .outputLogic = 0,
     };
     GPIO_PinInit(GPIO1, 7, &sw_config);
+}
 
+
+void Init_Filtro_Ctimer(void)
+{
     ctimer_config_t config;
     CTIMER_GetDefaultConfig(&config);
     CTIMER_Init(CTIMER0, &config);
@@ -65,7 +100,7 @@ int main(void)
     ctimer_match_config_t matchConfig;
     matchConfig.enableCounterReset  = true;
     matchConfig.enableCounterStop   = false;
-    matchConfig.matchValue          = (96000000/1000);
+    matchConfig.matchValue          = CTIMER_FREQ_1MS;
     matchConfig.outControl          = kCTIMER_Output_NoAction;
     matchConfig.outPinInitState     = false;
     matchConfig.enableInterrupt     = true;
@@ -74,15 +109,4 @@ int main(void)
 
     EnableIRQ(CTIMER0_IRQn);
     CTIMER_StartTimer(CTIMER0);
-
-    PRINTF("Sistema iniciado. Esperando boton...\r\n");
-
-    while (1)
-    {
-        if (boton_presionado)
-        {
-            PRINTF("Boton presionado!(Filtro Ctimer)\r\n");
-            boton_presionado = false;
-        }
-    }
 }
