@@ -1,0 +1,18 @@
+/*
+ * Copyright 2026 NXP
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/ {
+	aliases {
+		test-counter = &timer20;
+	};
+};
+
+&timer20 {
+	status = "okay";
+};
+
+&wdt31 {
+	status = "okay";
+};

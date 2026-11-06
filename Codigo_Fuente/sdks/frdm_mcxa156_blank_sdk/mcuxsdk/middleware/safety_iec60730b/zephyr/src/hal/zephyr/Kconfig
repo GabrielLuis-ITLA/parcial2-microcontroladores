@@ -1,0 +1,30 @@
+# Copyright 2026 NXP
+# SPDX-License-Identifier: Apache-2.0
+
+config IEC60730B_TEST_WDOG_DTCM_NOINIT
+    bool "Place watchdog counter variable in DTCM noinit section"
+    depends on IEC60730B_TEST_WDOG
+    select CODE_DATA_RELOCATION
+    default y if (NXP_IMX_EXTERNAL_SDRAM || NXP_IMX_EXTERNAL_HYPERRAM) && DT_HAS_NXP_IMX_DTCM_ENABLED
+    help
+      On boards where zephyr,sram is external volatile memory (SDRAM,
+      HyperRAM, PSRAM), the memory controller is re-initialised on every
+      reset, destroying all RAM contents — including __noinit variables.
+      This defeats the watchdog test's cross-reset counter persistence.
+      When enabled, noinit data is relocated to
+      DTCM_NOINIT (on-chip Data TCM), which retains
+      its contents across watchdog-triggered resets.
+
+config IEC60730B_TEST_WDOG_SRAMX_NOINIT
+    bool "Place watchdog counter variable in SRAMX noinit section"
+    depends on IEC60730B_TEST_WDOG
+    select CODE_DATA_RELOCATION
+    default y if SOC_SERIES_LPC55XXX
+    help
+      On SoCs whose zephyr,sram bank is cleared on every reset, 
+      __noinit variables do not survive a watchdog-triggered reset.
+      This defeats the watchdog test's cross-reset counter persistence.
+      When enabled, this file's noinit data is relocated to the SRAMX memory
+      region - a separate on-chip SRAM bank that is retained across resets.
+      Requires the board devicetree to expose a "SRAMX" zephyr,memory-region.
+

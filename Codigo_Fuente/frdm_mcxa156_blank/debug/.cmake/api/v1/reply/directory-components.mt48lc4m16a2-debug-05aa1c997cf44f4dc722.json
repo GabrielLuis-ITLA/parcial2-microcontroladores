@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "components/mt48lc4m16a2",
+		"source" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mt48lc4m16a2"
+	}
+}

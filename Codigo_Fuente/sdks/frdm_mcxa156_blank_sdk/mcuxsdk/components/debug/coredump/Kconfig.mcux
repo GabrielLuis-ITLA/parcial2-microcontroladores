@@ -1,0 +1,64 @@
+# Copyright 2025 NXP
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+rsource "Kconfig"
+
+config MCUX_COMPONENT_component.debug_coredump
+	bool
+	select MCUX_COMPONENT_component.zephyr_headers.debug_coredump
+	select MCUX_COMPONENT_component.gen_hal.osa if (DEBUG_COREDUMP_MEMORY_DUMP_THREADS || DEBUG_COREDUMP_MEMORY_DUMP_MIN)
+
+# Only make the flash_partition backend component available when its matching
+# upstream backend choice is selected. The depends on guards against manually
+# enabling the component without DEBUG_COREDUMP_BACKEND_FLASH_PARTITION, which
+# would compile a backend that the dispatcher never binds (misconfiguration).
+config MCUX_COMPONENT_component.debug_coredump_backend.flash_partition
+	bool
+	depends on DEBUG_COREDUMP_BACKEND_FLASH_PARTITION
+	default y
+
+# DEBUG_COREDUMP_BACKEND_OTHER (upstream Kconfig) only declares that an
+# out-of-tree backend provides coredump_backend_other; it does not pick which
+# one. Do NOT auto-select mflash here: a project that wants the mflash backend
+# must explicitly select MCUX_COMPONENT_component.debug_coredump_backend.mflash
+# (e.g. via prj.conf). This leaves room for other out-of-tree BACKEND_OTHER
+# implementations (defined in the consuming project) without a symbol clash.
+config MCUX_COMPONENT_component.debug_coredump_backend.mflash
+	bool "Use mflash as debug coredump backend"
+	depends on DEBUG_COREDUMP_BACKEND_OTHER
+	help
+	  Select mflash as debug coredump backend. This symbol has a prompt
+	  so a consuming project can opt into the mflash implementation of
+	  coredump_backend_other explicitly from prj.conf. It is not selected
+	  automatically, leaving room for other out-of-tree BACKEND_OTHER
+	  implementations (defined in the consuming project) without a symbol
+	  clash.
+
+if MCUX_COMPONENT_component.debug_coredump_backend.mflash
+
+config MFLASH_COREDUMP_REGION_START_ADDR
+	hex "Coredump region start address"
+	default 0x0
+	help
+      Should be the offset of flash address.
+
+config MFLASH_COREDUMP_REGION_SIZE
+	hex "Size of coredump region"
+	default 0x1000
+	help
+	  Should be times of block size.
+
+endif
+
+config DEBUG_THREAD_INFO
+	bool
+	select THREAD_MONITOR
+	select THREAD_NAME
+	help
+	  This option exports an array of offsets to kernel structs to allow
+	  for debugger RTOS plugins to determine the state of running threads.
+
+config MCUX_COMPONENT_component.debug_thread_info
+	bool
+	default y if DEBUG_THREAD_INFO

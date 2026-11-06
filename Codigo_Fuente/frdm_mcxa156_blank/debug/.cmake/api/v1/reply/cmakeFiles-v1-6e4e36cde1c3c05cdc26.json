@@ -1,0 +1,2176 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/mcux.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/logging.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/basic_settings.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/basic_settings_lite.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/misc_function.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/python.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/FindPython3.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/FindPython/Support.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/ruby.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/sysbuild/cmake/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/toolchain/toolchain.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/toolchain/mcux_config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/toolchain/armgcc.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/function.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/variable.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA156/variable.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/variable.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "debug/CMakeFiles/3.31.12/CMakeSystem.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/toolchain/armgcc.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "debug/CMakeFiles/3.31.12/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "debug/CMakeFiles/3.31.12/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "debug/CMakeFiles/3.31.12/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/opt/local/share/cmake-3.31/Modules/Internal/CMakeASMLinkerInformation.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/mcux_module.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/kconfig.cmake"
+		},
+		{
+			"path" : "frdmmcxa156/cfg_tools_generated.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/mcux_version_header.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/mcux_version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/run.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/flash/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/board_runner.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/runner/linkserver.board.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/runner/jlink.board.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/guigenerator.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/CMakeLists.txt"
+		},
+		{
+			"path" : "frdmmcxa156/board_files.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/demo_apps/hello_world/hello_world.mex"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/demo_apps/led_blinky/led_blinky.mex"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/demo_apps/power_mode_switch/low_level/power_mode_switch_ll.mex"
+		},
+		{
+			"path" : "prj.conf"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/prj.conf"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA156/prj.conf"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/prj.conf"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/prj.conf"
+		},
+		{
+			"path" : "prj.conf"
+		},
+		{
+			"path" : "frdmmcxa156/prj.conf"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "debug/.config"
+		},
+		{
+			"path" : "Kconfig"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "debug/Kconfig/Kconfig.modules"
+		},
+		{
+			"path" : "frdmmcxa156/Kconfig.trace"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/Kconfig.mcuxpresso"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/CMSIS/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/configuration/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/cortexa/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/cortexm/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/IS42SM16800H/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/adc_sensor/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/assert/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/audio/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/aws_iot/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/button/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/clock/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_dspi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_ecspi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_enet/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_enet_phy/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_flexcomm/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_gpio/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_i2c/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_ii2c/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_iuart/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpc_gpio/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpc_i2c/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpc_vspi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpc_vusart/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpi2c/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpsci/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpspi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpuart/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_mcx_enet/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_mcx_flash/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_spi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_uart/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/codec/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/common_task/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/conn_fwloader/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/coremark/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/crc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug/coredump/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug/coredump/Kconfig.mcux"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug/memfault/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug_console/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug_console_lite/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug_console_rtt/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/display/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/edgefast_wifi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/eeprom_emulation/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/eeprom_emulation_k4/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/ele_base_api/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/ele_crypto/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/exception_handling/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/expander/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/flash/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/flash/mflash/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/format/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/Kconfig.arch_map"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/Kconfig.map"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/Kconfig.mcux_map"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/Kconfig.osa_map"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/Kconfig.zephyr_headers"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/clock_control/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/clock_control/Kconfig.gen_hal"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/clock_control/Kconfig.mcux_syscon"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/flash/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/flash/Kconfig.gen_hal"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/flash/Kconfig.mcux"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/memc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/memc/Kconfig.gen_hal"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/memc/Kconfig.mcux"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/pinctrl/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/pinctrl/Kconfig.gen_hal"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/zephyr/drivers/pinctrl/Kconfig.mci_io_mux"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gpio/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/i2c/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/i2c/muxes/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/i3c_bus/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/imu_adapter/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/imx_sm_crc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/internal_flash/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/lce/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/led/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/lists/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/log/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mem_manager/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/messaging/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/misc_utilities/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mpi_loader/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mt48lc2m32b2/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mt48lc4m16a2/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mx25_flash/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mx25l_flash/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mx25r_flash/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/notifier/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/osa/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/panic/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/phy/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/pinctrl/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/pmic/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/power/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/power_manager/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/pwm/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/reset/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/reset1/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/rng/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/rpmsg/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/rtc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/rtt/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/scmi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/sdu/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/semihost/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/sensor/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/serial_manager/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/shell/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/silicon_id/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/silicon_id/Kconfig.chip"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/slcd_engine/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/sm/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/smbus/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/smt/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/spi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/srtm/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/srtm/channels/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/srtm/services/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/storage/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/storage/flash_map/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/storage/stream/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/str/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/sx1502/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/systick_timer/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/time_stamp/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/timer/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/timer_lptmr/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/timer_manager/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/touch/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/uart/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/unity/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/v2x_base/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/v2x_fce/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/video/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/wifi_bt_module/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA153/drivers/romapi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA156/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA156/Kconfig.chip"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA156/Kconfig.defconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA156/drivers/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/arm/Kconfig.common"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/aoi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/armv7-m7/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/cache64/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/llc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/lmem/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/lpcac/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/lpcac_n4a_mcxn/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/lplmem/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/xcache/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cdog/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/common/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/crc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/ctimer/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/dac_1/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/edma4/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/edma_unified/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/eim/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/eqdc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/erm/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexcan/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/a-format/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/biss/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/camera/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/endat2p2/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/i2c/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/i2s/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/mculcd/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/qspi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/spi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/t-format/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/uart/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexpwm/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/glikey/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/gpio/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/i3c/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/inputmux/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpadc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpc_freqme/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpcmp/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpi2c/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpspi/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lptmr/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpuart/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/mcx_cmc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/mcx_spc/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/mcx_vbat/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/opamp/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/ostimer/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/port/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/pwm/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/smartcard/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/trdc_1/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/utick/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/waketimer/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/wuu/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/wwdt/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/Kconfig.defconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/Kconfig.prjseg"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_common/Kconfig.interfaces"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_common/project_segments/common/Kconfig.prjseg"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_common/project_segments/lvgl/Kconfig.prjseg"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/lvgl_examples/lvgl_sdk/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/lvgl_examples/lvgl_sdk/lvgl_support/mcx_flexio/Kconfig.lvgl_support"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/cadence/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/canopennode/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/emwin/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/fatfs/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/freemaster/mcux/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/littlefs/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/lvgl/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/mcuboot_opensource/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/motor_control/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/mstp-lib/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/rtcesl/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/safety_iec60730b/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/usb/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/usb/Kconfig.device_config"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/usb/Kconfig.host_config"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/usb/Kconfig.hsdcd_config"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/usb/Kconfig.pd_config"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/usb/Kconfig.phydcd_config"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/rtos/freertos/freertos-kernel/Kconfig"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "debug/mcux_config.h"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/tool_data/misc/component_id_map.yml"
+		},
+		{
+			"path" : "frdmmcxa156"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/MCUX_VERSION"
+		},
+		{
+			"path" : "frdmmcxa156/led_blinky.mex"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/flash/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/usage/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/cmake/extension/reports/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA156/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/arm/device_header.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/shared.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/configuration/mcx.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/configuration/common.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/arm/shared.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/cortexm/core_cm33.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/cortexm/core_fpv5_sp.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/cortexm/cpu_define.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/target/targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA156/drivers/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/devices/MCX/MCXA/MCXA153/drivers/romapi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/CMSIS/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_common/project_segments/common/prjseg.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_boards/frdmmcxa156/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/arch/arm/target/flash.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_common/project_setting/arm_common.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_common/project_setting/common.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/_common/project_segments/lvgl/prjseg.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/lvgl_examples/lvgl_sdk/lvgl_support/mcx_flexio/lvgl_support.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/aoi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cdog/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/common/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/crc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/ctimer/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/dac_1/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/edma4/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/edma_unified/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/eim/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/eqdc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/erm/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexcan/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexpwm/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/glikey/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/gpio/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/i3c/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/inputmux/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpadc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpc_freqme/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpcmp/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpi2c/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpspi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lptmr/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpuart/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/mcx_cmc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/mcx_spc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/mcx_vbat/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/opamp/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/ostimer/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/port/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/pwm/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/smartcard/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/trdc_1/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/utick/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/waketimer/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/wuu/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/wwdt/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/armv7-m7/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/armv8-a/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/cache64/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/llc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/lmem/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/lpcac/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/lpcac_n4a_mcxn/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/lplmem/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/cache/xcache/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/a-format/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/biss/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/camera/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/endat2p2/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/i2c/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/i2s/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/mculcd/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/qspi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/spi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/t-format/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/flexio/uart/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/assert/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/audio/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/aws_iot/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/button/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/common_task/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/coremark/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/crc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug_console/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug_console_lite/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/display/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/exception_handling/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/flash/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/flash/mflash/mcxa/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gpio/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/i2c/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/i2c/muxes/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/internal_flash/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/led/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/lists/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/log/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mem_manager/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/messaging/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/misc_utilities/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/osa/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/panic/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/pmic/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/power_manager/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/pwm/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/reset/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/reset1/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/rng/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/rpmsg/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/rtc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/sensor/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/serial_manager/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/shell/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/spi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/str/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/timer/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/timer_manager/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/time_stamp/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/touch/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/uart/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/video/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/phy/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/IS42SM16800H/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/adc_sensor/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/conn_fwloader/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/ele_crypto/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/v2x_base/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/v2x_fce/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/i3c_bus/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/imx_sm_crc/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/imu_adapter/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mt48lc2m32b2/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mt48lc4m16a2/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mx25_flash/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mx25l_flash/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mx25r_flash/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/rtt/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/scmi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/sdu/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/slcd_engine/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/smt/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/srtm/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/srtm/channels/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/srtm/services/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/sx1502/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/wifi_bt_module/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/smbus/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug_console_rtt/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/semihost/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/notifier/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/ele_base_api/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/format/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/mpi_loader/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/pinctrl/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/clock/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/silicon_id/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/sm/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/systick_timer/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/timer_lptmr/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/unity/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/power/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/codec/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/expander/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/edgefast_wifi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/eeprom_emulation/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/eeprom_emulation_k4/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/storage/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/storage/stream/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/storage/flash_map/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug/memfault/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/debug/coredump/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/gen_hal/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/lce/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_dspi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_ecspi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_enet/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_enet_phy/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_flexcomm/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_gpio/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_i2c/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_ii2c/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_iuart/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpc_gpio/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpc_i2c/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpc_vspi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpc_vusart/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpi2c/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpsci/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpspi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpuart/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_mcx_enet/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_mcx_flash/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_spi/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_uart/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/rtos/freertos/freertos-kernel/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/usb/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/fatfs/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/littlefs/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/rtcesl/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/motor_control/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/examples/lvgl_examples/lvgl_sdk/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/mcuboot_opensource/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/freemaster/mcux/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/safety_iec60730b/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/cadence/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/emwin/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/canopennode/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/mstp-lib/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug",
+		"source" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}

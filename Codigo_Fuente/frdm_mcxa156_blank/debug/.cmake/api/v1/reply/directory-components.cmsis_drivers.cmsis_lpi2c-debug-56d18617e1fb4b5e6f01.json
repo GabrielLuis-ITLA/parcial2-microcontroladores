@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "components/cmsis_drivers/cmsis_lpi2c",
+		"source" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/cmsis_drivers/cmsis_lpi2c"
+	}
+}

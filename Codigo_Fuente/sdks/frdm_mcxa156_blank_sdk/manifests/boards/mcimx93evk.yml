@@ -1,0 +1,93 @@
+example_list:
+- freertos_examples
+- lwip_examples
+- cmsis_driver_examples
+- driver_examples
+- demo_apps
+- multicore_examples
+- eiq_examples
+- tfm_examples
+
+
+
+
+
+# Package tailoring: trim devices/ and drivers/ to only what this board needs.
+# Derived from device Kconfig.chip IP support variants (via MIR board->device mapping).
+devices_filter:
+  - i.MX/i.MX93
+
+drivers_filter:
+  - cache
+  - clock
+  - common
+  - edma4
+  - edma_unified
+  - enet
+  - enet_qos
+  - flexcan
+  - flexio
+  - flexspi
+  - i3c
+  - iomuxc
+  - isi
+  - lcdifv3
+  - lpi2c
+  - lpit
+  - lpspi
+  - lptmr
+  - lpuart
+  - mcm
+  - mipi_dsi_imx
+  - mu1
+  - otfad
+  - pdm
+  - power
+  - pxp
+  - reset
+  - rgpio
+  - sai
+  - sar_adc
+  - sema42
+  - smartcard
+  - spdif
+  - tmu_3
+  - tpm
+  - trdc_1
+  - trgmux
+  - tstmr
+  - usdhc
+  - wdog32
+
+repo_list:
+- core
+- CMSIS
+- mcuxsdk-tool-data
+- mcu-sdk-components
+- mcu-sdk-doc
+- mcu-sdk-examples
+- mcux-devices-imx
+- tinycbor
+- pkcs11
+- aws_iot_llhttp
+- lwip
+- mcux-sdk-middleware-eiq
+- mcux-sdk-middleware-tensorflow
+- mcuxsdk-middleware-executorch
+- mcux-sdk-middleware-mpp
+- freemaster
+- mcux-sdk-middleware-multicore
+- mcux-mcmgr
+- rpmsg-lite
+- erpc
+- voice_seeker
+- voice_spot
+- audio-voice-components
+- safety_iec60730b
+- freertos-kernel
+- freertos-kernel-upstream
+- mbedtls3x
+- tfm
+- psa-arch-tests
+- tf-m-tests
+- qcbor

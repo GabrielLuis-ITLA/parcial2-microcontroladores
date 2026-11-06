@@ -1,0 +1,35 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-09-22T08:52:40Z",
+    "creators": [
+      "Organization: NXP"
+    ],
+    "licenseListVersion": "3.28"
+  },
+  "name": "mcux-sdk-middleware-usb-2.13.0",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://nxp.com/spdx/612a27c2-aa78-4f89-9c1d-76e3b72293c1",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-package-612a27c2-aa78-4f89-9c1d-76e3b72293c1",
+      "name": "mcux-sdk-middleware-usb",
+      "versionInfo": "2.13.0",
+      "licenseConcluded": "(BSD-3-Clause)",
+      "licenseDeclared": "(BSD-3-Clause)",
+      "downloadLocation": "https://github.com/nxp-mcuxpresso/mcux-sdk-middleware-usb",
+      "originator": "Organization: NXP",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-package-612a27c2-aa78-4f89-9c1d-76e3b72293c1"
+    }
+  ]
+}

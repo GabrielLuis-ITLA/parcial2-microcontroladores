@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "middleware/safety_iec60730b",
+		"source" : "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/middleware/safety_iec60730b"
+	}
+}

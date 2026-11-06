@@ -1,0 +1,59 @@
+example_list:
+- cmsis_driver_examples
+- demo_apps
+- driver_examples
+- freemaster_examples
+
+
+
+
+
+# Package tailoring: trim devices/ and drivers/ to only what this board needs.
+# Derived from device Kconfig.chip IP support variants (via MIR board->device mapping).
+devices_filter:
+  - MCX/MCXC
+
+drivers_filter:
+  - adc16
+  - cache
+  - clock
+  - cmp
+  - common
+  - cop
+  - flash
+  - gpio
+  - i2c
+  - iomuxc
+  - llwu
+  - lptmr
+  - lpuart
+  - mcm
+  - pmc
+  - port
+  - power
+  - rcm
+  - reset
+  - rtc
+  - sim
+  - smartcard
+  - smc
+  - spi
+  - tpm
+  - vref
+
+repo_list:
+- core
+- CMSIS
+- mcuxsdk-tool-data
+- mcu-sdk-components
+- mcu-sdk-doc
+- mcu-sdk-examples
+- mcux-devices-mcx
+- mcux-sdk-middleware-sdmmc
+- fatfs
+- freemaster
+- freertos-kernel
+- freertos-kernel-upstream
+- aws_iot_llhttp
+- pkcs11
+- tinycbor

@@ -1,0 +1,89 @@
+example_list:
+- canopennode_examples
+- cmsis_driver_examples
+- component_examples
+- demo_apps
+- driver_examples
+- emwin_examples
+- freemaster_examples
+- freertos_examples
+- littlefs_examples
+- lvgl_examples
+- ota_examples
+- usb_examples
+
+
+
+
+
+# Package tailoring: trim devices/ and drivers/ to only what this board needs.
+# Derived from device Kconfig.chip IP support variants (via MIR board->device mapping).
+devices_filter:
+  - MCX/MCXA
+
+drivers_filter:
+  - aoi
+  - cache
+  - cdog
+  - clock
+  - common
+  - crc
+  - ctimer
+  - dac_1
+  - edma4
+  - edma_unified
+  - eim
+  - eqdc
+  - erm
+  - flexcan
+  - flexio
+  - flexpwm
+  - glikey
+  - gpio
+  - i3c
+  - inputmux
+  - iomuxc
+  - lpadc
+  - lpc_freqme
+  - lpcmp
+  - lpi2c
+  - lpspi
+  - lptmr
+  - lpuart
+  - mcx_cmc
+  - mcx_spc
+  - mcx_vbat
+  - opamp
+  - ostimer
+  - port
+  - power
+  - pwm
+  - reset
+  - smartcard
+  - trdc_1
+  - utick
+  - waketimer
+  - wuu
+  - wwdt
+
+repo_list:
+- core
+- CMSIS
+- mcuxsdk-tool-data
+- mcu-sdk-components
+- mcu-sdk-doc
+- mcu-sdk-examples
+- mcux-devices-mcx
+- mcuboot_opensource
+- usb
+- canopennode
+- fatfs
+- littlefs
+- motor_control
+- rtcesl
+- freemaster
+- lvgl
+- safety_iec60730b
+- freertos-kernel
+- freertos-kernel-upstream
+- emwin

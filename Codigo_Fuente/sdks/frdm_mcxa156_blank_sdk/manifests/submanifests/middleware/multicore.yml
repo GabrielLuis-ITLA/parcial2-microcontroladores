@@ -1,0 +1,69 @@
+manifest:
+  remotes:
+  - name: nxp
+    url-base: https://github.com/NXP
+  - name: nxp-zephyr
+    url-base: https://github.com/nxp-zephyr
+  - name: nxp-mcuxpresso
+    url-base: https://github.com/nxp-mcuxpresso
+  defaults:
+    remote: nxp-mcuxpresso
+  projects:
+  - name: mcux-sdk-middleware-multicore
+    revision: 739a25c4b50d1694de7d2e07b9bc92529abbb837
+    path: mcuxsdk/middleware/multicore
+    url: https://github.com/nxp-mcuxpresso/mcuxsdk-middleware-multicore
+    groups:
+    - multicore
+    - middleware
+    - ble_nxp
+    userdata:
+      owner: michal.princ@nxp.com
+      track_branch: main
+      branch_flow: false
+      display_name: multicore
+      description: Multicore Software Development Kit, a collection of components
+        for efficient work with multicore devices as well as for the multiprocessor
+        communication. It involves Multicore Manager (MCMGR), Remote Processor Messaging
+        - Lite (RPMsg-Lite) and Embedded Remote Procedure Call (eRPC) sw components.
+  - name: mcux-mcmgr
+    revision: 7ab6fbaf6a252ae91efd6b09d5092f3b0c59f1e3
+    path: mcuxsdk/middleware/multicore/mcmgr
+    url: https://github.com/nxp-mcuxpresso/mcux-mcmgr
+    groups:
+    - multicore
+    - middleware
+    - ble_nxp
+    userdata:
+      owner: tomas.galbicka@nxp.com
+      track_branch: main
+      branch_flow: false
+      display_name: MCMGR
+      description: Multicore manager
+  - name: rpmsg-lite
+    revision: cd444ceee7067c193dcd3771fc9d2571321d9104
+    path: mcuxsdk/middleware/multicore/rpmsg-lite
+    url: https://github.com/nxp-mcuxpresso/rpmsg-lite
+    groups:
+    - multicore
+    - middleware
+    - ble_nxp
+    userdata:
+      owner: tomas.galbicka@nxp.com
+      track_branch: main
+      branch_flow: false
+      display_name: RPMsg-Lite
+      description: Open Asymmetric Multi Processing (OpenAMP) framework project
+  - name: erpc
+    revision: 5964116a2110b4dbbc3abb8a2d1ddb33f2c77e46
+    path: mcuxsdk/middleware/multicore/erpc
+    url: https://github.com/EmbeddedRPC/erpc
+    groups:
+    - multicore
+    - middleware
+    userdata:
+      owner: michal.princ@nxp.com
+      track_branch: main
+      branch_flow: false
+      display_name: eRPC
+      description: Embedded Remote Procedure Call

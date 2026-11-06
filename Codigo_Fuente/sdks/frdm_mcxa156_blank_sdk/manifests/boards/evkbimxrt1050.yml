@@ -1,0 +1,145 @@
+example_list:
+- bootloader_examples
+- cmsis_driver_examples
+- component_examples
+- demo_apps
+- display_examples
+- driver_examples
+- eiq_examples
+- fatfs_examples
+- freemaster_examples
+- freertos_examples
+- littlefs_examples
+- lvgl_examples
+- lwip_examples
+- mbedtls3x_examples
+- mbedtls_examples
+- ota_examples
+- sdmmc_examples
+- soem_examples
+- usb_examples
+- wifi_examples
+
+
+
+
+
+# Package tailoring: trim devices/ and drivers/ to only what this board needs.
+# Derived from device Kconfig.chip IP support variants (via MIR board->device mapping).
+devices_filter:
+  - RT/RT1050
+
+drivers_filter:
+  - adc_12b1msps_sar
+  - adc_etc
+  - aipstz
+  - aoi
+  - bee
+  - cache
+  - clock
+  - cmp
+  - common
+  - csi
+  - dcdc_1
+  - dcp
+  - dmamux
+  - edma
+  - elcdif
+  - enc
+  - enet
+  - ewm
+  - flexcan
+  - flexio
+  - flexpwm
+  - flexram
+  - flexspi
+  - gpc_1
+  - gpt
+  - igpio
+  - iomuxc
+  - kpp
+  - lpi2c
+  - lpspi
+  - lpuart
+  - ocotp
+  - pit
+  - pmu
+  - power
+  - pwm
+  - pxp
+  - qtmr_1
+  - reset
+  - rtwdog
+  - sai
+  - semc
+  - snvs_hp
+  - snvs_lp
+  - spdif
+  - src
+  - tempmon
+  - trng
+  - tsc
+  - usdhc
+  - wdog01
+  - xbara
+  - xbarb
+
+repo_list:
+- CMSIS
+- audio-voice-components
+- aws_iot_llhttp
+- backoffalgorithm
+- backoffalgorithm-upstream
+- cjson
+- core
+- corehttp
+- corehttp-upstream
+- corejson
+- corejson-upstream
+- coremqtt
+- coremqtt-upstream
+- corepkcs11
+- corepkcs11-upstream
+- dhara
+- edgefast_open
+- emwin
+- ethermind
+- fatfs
+- freemaster
+- freertos-kernel
+- freertos-kernel-upstream
+- fw_bin
+- lab-project-freertos-posix
+- lab-project-freertos-posix-upstream
+- libjpeg
+- littlefs
+- lvgl
+- lwip
+- maestro
+- mbedtls
+- mbedtls3x
+- mcu-sdk-components
+- mcu-sdk-doc
+- mcu-sdk-examples
+- mcu_bootloader
+- mcuboot_opensource
+- mcux-devices-rt
+- mcux-freertos-drivers
+- mcux-sdk-middleware-eiq
+- mcux-sdk-middleware-mpp
+- mcux-sdk-middleware-sdmmc
+- mcux-sdk-middleware-tensorflow
+- mcuxsdk-middleware-executorch
+- mcuxsdk-tool-data
+- openh264
+- pkcs11
+- pngdec
+- psa-arch-tests
+- psa_crypto_driver
+- soem
+- tf-psa-crypto
+- tfm
+- tinycbor
+- usb
+- vit
+- wifi_nxp

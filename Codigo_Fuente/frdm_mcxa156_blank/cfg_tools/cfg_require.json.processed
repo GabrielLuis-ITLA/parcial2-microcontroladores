@@ -1,0 +1,17 @@
+{
+  "projects": [{
+    "core": "cm33_core0",
+    "addComponents": [],
+    "device_package": "MCXA156VLL",
+    "addIncludes": [],
+    "projectBoardFolder": "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/frdmmcxa156",
+    "source_generated_cmake_file_path": "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/frdmmcxa156/cfg_tools_generated.cmake",
+    "addFiles": [],
+    "name": "frdm_mcxa156_blank",
+    "removeFiles": [],
+    "projectRootPath": "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank",
+    "component_edit_prj_file_path": "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/prj.conf",
+    "board": "frdmmcxa156"
+  }],
+  "$schema": "https://mcuxpresso.nxp.com/staticdata/mcux/schema/cfg_require/cfg_require_schema_1.0.json"
+}

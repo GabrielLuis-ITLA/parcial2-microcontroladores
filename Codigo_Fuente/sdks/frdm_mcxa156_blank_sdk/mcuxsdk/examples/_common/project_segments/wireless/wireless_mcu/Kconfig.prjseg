@@ -1,0 +1,195 @@
+# Copyright 2024-2026 NXP
+# SPDX-License-Identifier: BSD-3-Clause
+
+config MCUX_PRJSEG_module.board.wireless.app_services
+    bool "Wireless Application Services"
+    depends on MCUX_PRJSEG_module.board.wireless.board
+    help
+      This is a collection of APP helpers used in wireless examples to abstract the initialization flow of
+      some software components acting like services. This is a template for demo purpose and doesn't aim to
+      always support all use cases.
+
+config MCUX_PRJSEG_module.board.wireless.app_ble
+    bool "Wireless BLE Application"
+    depends on MCUX_PRJSEG_module.board.wireless.board
+    help
+      This is a collection of APP helpers used in wireless examples to abstract the initialization flow of
+      NXP BLE software components.
+
+config MCUX_PRJSEG_module.board.wireless.app_lce
+    bool "Wireless Localization Compute Engine"
+    select MCUX_COMPONENT_component.lce
+    select MCUX_COMPONENT_driver.mu1
+    depends on MCUX_PRJSEG_module.board.wireless.board
+    depends on MCUX_HW_DEVICE_KW47B42ZB7 || MCUX_HW_DEVICE_MCXW727C || MCUX_HW_DEVICE_KW47B42Z97 || MCUX_HW_DEVICE_KW47B42Z96 || MCUX_HW_DEVICE_KW47B42ZB6 || MCUX_HW_DEVICE_KW43B43ZC7 || MCUX_HW_DEVICE_MCXW70AC
+    help
+      This is the initialization module for the DSP-V (Localization Compute Engine).
+
+menuconfig MCUX_PRJSEG_module.board.wireless.board
+    bool "wireless connectivity board files"
+    select MCUX_COMPONENT_middleware.wireless.framework
+    select MCUX_COMPONENT_middleware.wireless.framework.platform
+    depends on !MCUX_PRJSEG_module.board.boardfile
+    help
+      This is a customized implementation of board file used in wireless examples.
+
+if MCUX_PRJSEG_module.board.wireless.board
+  config MCUX_PRJSEG_module.board.wireless.board.components
+      bool "Components: Serial Manager, LED, Button"
+      default y
+      select MCUX_COMPONENT_component.led
+      select MCUX_COMPONENT_component.button
+      select MCUX_COMPONENT_component.serial_manager
+      select MCUX_COMPONENT_component.timer_manager
+      select MCUX_COMPONENT_component.gpio_adapter
+    help
+      This is a wireless implementation of board file used in wireless examples for components usage such as Serial Manager, LED, Button
+
+  config MCUX_PRJSEG_module.board.wireless.board.dcdc
+      bool "DCDC"
+      default y
+      select MCUX_COMPONENT_driver.spc
+
+  config MCUX_PRJSEG_module.board.wireless.board.debug
+      bool "Debug"
+
+  config MCUX_PRJSEG_module.board.wireless.board.debug_utils
+      bool "Shared debug utilities (Base64 encoder)"
+      help
+        Common board debug helpers shared by the debug backends (board_debug_utils),
+        currently the BOARD_DBG_Base64Encode encoder. This is an internal building
+        block selected by the features that need it (debug_nbu, debug_coredump);
+        it is not meant to be enabled directly.
+
+  config MCUX_PRJSEG_module.board.wireless.board.debug_logger
+      bool "Debug log engine"
+      select MCUX_COMPONENT_middleware.wireless.framework.workq
+      help
+        Debug log engine. Can be used for HCI tracing, coredump logs, etc.
+
+  if MCUX_PRJSEG_module.board.wireless.board.debug_logger
+  choice MCUX_PRJSEG_module.board.wireless.board.debug_logger_port_selection
+      prompt "Debug log output port"
+      config MCUX_PRJSEG_module.board.wireless.board.debug_logger_port_serialmgr
+          bool "Log output to main serial port"
+          depends on !MCUX_COMPONENT_middleware.wireless.framework.fsci
+          select MCUX_COMPONENT_component.serial_manager
+      config MCUX_PRJSEG_module.board.wireless.board.debug_logger_port_lpuart
+          bool "Log output to second UART"
+          select MCUX_COMPONENT_driver.lpuart
+      config MCUX_PRJSEG_module.board.wireless.board.debug_logger_port_custom
+          bool "Custom port (user implemented)"
+  endchoice
+  endif
+
+  config MCUX_PRJSEG_module.board.wireless.board.debug_nbu
+      bool "NBU Debug support"
+      select MCUX_PRJSEG_module.board.wireless.board.debug_utils
+      select MCUX_COMPONENT_middleware.wireless.framework.dbg.nbu_debug_on_host
+      imply MCUX_PRJSEG_module.board.wireless.board.debug_logger
+      depends on MCUX_COMPONENT_middleware.wireless.framework.platform.kw47_mcxw72 || \
+                 MCUX_COMPONENT_middleware.wireless.framework.platform.kw43_mcxw70
+      help
+        Allows to extract and analyze NBU state in case a fault is detected
+
+  config MCUX_PRJSEG_module.board.wireless.board.debug_coredump
+      bool "Coredump over debug log engine"
+      select MCUX_PRJSEG_module.board.wireless.board.debug_utils
+      select MCUX_COMPONENT_component.zephyr_headers
+      select MCUX_COMPONENT_component.debug_coredump
+      select DEBUG_COREDUMP
+      # Stream the dump through the shared debug log engine (port-agnostic); the
+      # port choice pulls in whatever driver it needs.
+      imply MCUX_PRJSEG_module.board.wireless.board.debug_logger
+      # Pull in the framework app-core fault handler (host/fwk_fault_handlers.c),
+      # which is the integration point that calls coredump() on a fault.
+      imply MCUX_COMPONENT_middleware.wireless.framework.dbg.fault_handlers
+      # NOTE: DEBUG_COREDUMP_BACKEND_OTHER is a Kconfig choice value and cannot be
+      # turned on with select (Kconfig ignores select on choice members). The
+      # consuming project must set CONFIG_DEBUG_COREDUMP_BACKEND_OTHER=y in its
+      # prj.conf to bind the board_debug implementation of coredump_backend_other.
+      depends on MCUX_COMPONENT_middleware.wireless.framework.platform.kw47_mcxw72 || \
+                 MCUX_COMPONENT_middleware.wireless.framework.platform.kw43_mcxw70
+      help
+        Streams the Zephyr coredump as framed Base64 lines ("#CD:BEGIN#" ...
+        "#CD:END#") through the shared debug log engine, over whatever output
+        port the engine's Kconfig choice selects. This provides the board_debug
+        implementation of coredump_backend_other (no external flash required),
+        as an alternative to the mflash backend.
+
+  config MCUX_PRJSEG_module.board.wireless.board.extflash
+      bool "External flash"
+      select MCUX_COMPONENT_component.flash_nor_lpspi
+
+  config MCUX_PRJSEG_module.board.wireless.board.lowpower
+      bool "Lowpower"
+      select MCUX_COMPONENT_middleware.wireless.framework.platform.lowpower
+      select MCUX_COMPONENT_middleware.wireless.framework.seclib_rng
+      select MCUX_COMPONENT_component.timer_manager
+      select MCUX_COMPONENT_component.power_manager_framework
+      select MCUX_COMPONENT_middleware.wireless.framework.lowpower
+      imply MCUX_COMPONENT_middleware.wireless.framework.sensors
+endif
+
+config MCUX_PRJSEG_module.board.wireless.clock
+    bool "Wireless Clock Config"
+    select MCUX_COMPONENT_driver.spc
+    select MCUX_COMPONENT_driver.ccm32k
+    depends on !MCUX_PRJSEG_module.board.clock
+    help
+      This is a customized implementation of clock config file used in wireless examples.
+
+config MCUX_PRJSEG_module.board.wireless.hw_app
+    bool "Specific HW init and app common for wireless applications"
+    depends on MCUX_COMPONENT_middleware.wireless.framework
+    depends on MCUX_PRJSEG_project.hw_app_customize_folder
+    help
+      This is a customized implementation of hardware init used in wireless examples.
+
+config MCUX_PRJSEG_module.board.wireless.board.debug_nbu.enable_app_log
+    bool "Enable DBG Logging to app console"
+    default y if !MCUX_COMPONENT_middleware.wireless.framework.fsci
+    depends on MCUX_PRJSEG_module.board.wireless.board.debug_nbu
+    help
+      Enable debug event analysis logging to the application console.
+
+config MCUX_PRJSEG_module.board.wireless.board.debug_nbu.enable_hci_log
+    bool "HCI Packet Logger"
+    default y if !MCUX_COMPONENT_middleware.wireless.framework.fsci
+    depends on MCUX_PRJSEG_module.board.wireless.board.debug_nbu
+    depends on MCUX_PRJSEG_module.board.wireless.board.debug_logger
+    help
+      Enable HCI packet logger for BLE protocol debugging.
+
+if MCUX_PRJSEG_module.board.wireless.board.debug_nbu.enable_hci_log
+
+config MCUX_PRJSEG_module.board.wireless.board.debug_nbu.enable_hci_log_on_fault_only
+    bool "Log HCI packets only on NBU fault"
+    default y if MCUX_PRJSEG_module.board.wireless.board.debug_logger_port_serialmgr
+    help
+      Instead of continuously logging every HCI packet, only forward packets once an
+      NBU fatal fault has been detected (checked directly via PLATFORM_IsNbuFaultSet()).
+      This is useful to capture the automatically generated coredump HCI on fault while
+      avoiding continuous logging overhead.
+      Strongly recommended on bare-metal builds (no RTOS): there the HCI packet is
+      emitted inline in the caller/ISR context, so continuous logging holds that context
+      for each packet's UART transmit time and can stall interrupts. Enabling fault-only
+      limits the inline emit to the coredump burst.
+
+config MCUX_PRJSEG_module.board.wireless.board.debug_nbu.enable_hci_log_base64
+    bool "Base64-encode HCI log output"
+    default y if MCUX_PRJSEG_module.board.wireless.board.debug_logger_port_serialmgr
+    help
+      Base64-encode each HCI packet before writing it to the log port and emit it as a
+      single line "@<base64>\n". This keeps the output ASCII-safe so it can be safely
+      interleaved with human-readable console text (recommended when logging to the main
+      serial port). Not needed on a dedicated binary port. The host capture tool must be
+      run in Base64 mode (see hci_to_btsnoop.py --base64) to decode these lines.
+
+endif
+
+config MCUX_PRJSEG_module.board.wireless.ble_app_mbedtls_psa_config
+    bool "Optimized configuration file for BLE Applications with PSA"
+    depends on MCUX_COMPONENT_middleware.wireless.framework.seclib_rng_port.psa
+    help
+      This is a customized PSA configuration file used in wireless BLE examples.

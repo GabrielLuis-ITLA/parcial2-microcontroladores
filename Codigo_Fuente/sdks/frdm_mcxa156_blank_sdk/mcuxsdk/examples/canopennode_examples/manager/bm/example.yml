@@ -1,0 +1,16 @@
+co_manager_bm:
+  section-type: application
+  contents:
+    meta_path: examples/canopennode_examples/manager/bm/.
+    project-root-path: boards/${board}/canopennode_examples/manager/bm/${multicore_foldername}
+    document:
+      name: co_manager_bm${core_id_suffix_name}
+      category: canopennode_examples
+      brief: The CANopen manager demo application demonstrates a CANopen manager on
+        the CANopenNode stack.The application acts as a CANopen manager and manages
+        a CANopen device.
+      example_readme:
+      - examples/canopennode_examples/manager/bm/readme.md
+      - ${board_root}/${board}/canopennode_examples/manager/bm/example_board_readme.md
+      - ${board_root}/${board}/examples_shared_readme.md
+  boards: {}

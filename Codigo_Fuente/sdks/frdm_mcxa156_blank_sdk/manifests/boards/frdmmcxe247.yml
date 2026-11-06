@@ -1,0 +1,88 @@
+example_list:
+- canopennode_examples
+- cmsis_driver_examples
+- demo_apps
+- driver_examples
+- freemaster_examples
+- freertos_examples
+- lwip_examples
+- mbedtls3x_examples
+- ota_examples
+
+
+
+
+
+# Package tailoring: trim devices/ and drivers/ to only what this board needs.
+# Derived from device Kconfig.chip IP support variants (via MIR board->device mapping).
+devices_filter:
+  - MCX/MCXE
+
+drivers_filter:
+  - acmp
+  - adc12
+  - cache
+  - clock
+  - common
+  - crc
+  - dmamux
+  - edma
+  - ela_csec
+  - enet
+  - ewm
+  - flash
+  - flexcan
+  - flexio
+  - ftm
+  - gpio
+  - iomuxc
+  - lpi2c
+  - lpit
+  - lpspi
+  - lptmr
+  - lpuart
+  - mcm
+  - pdb
+  - pmc
+  - port
+  - power
+  - qspi
+  - rcm
+  - reset
+  - rtc
+  - sai
+  - sim
+  - smartcard
+  - smc
+  - sysmpu
+  - trgmux
+  - wdog32
+
+repo_list:
+- core
+- CMSIS
+- mcuxsdk-tool-data
+- mcu-sdk-components
+- mcu-sdk-doc
+- mcu-sdk-examples
+- mcux-devices-mcx
+- mcuboot_opensource
+- lwip
+- canopennode
+- motor_control
+- rtcesl
+- freemaster
+- safety_iec60730b
+- edgelock
+- mbedtls
+- mbedtls3x
+- tfm
+- psa_crypto_driver
+- psa-arch-tests
+- tf-m-tests
+- qcbor
+- freertos-kernel
+- freertos-kernel-upstream
+- corehttp
+- corehttp-upstream
+- aws_iot_llhttp

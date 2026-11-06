@@ -1,0 +1,60 @@
+manifest:
+  remotes:
+  - name: nxp
+    url-base: https://github.com/NXP
+  - name: nxp-zephyr
+    url-base: https://github.com/nxp-zephyr
+  - name: nxp-mcuxpresso
+    url-base: https://github.com/nxp-mcuxpresso
+  defaults:
+    remote: nxp-mcuxpresso
+  projects:
+  - name: multicore-xaf
+    userdata:
+      owner: tomas.barak@nxp.com
+      track_branch: main
+      branch_flow: false
+      has_examples: true
+      display_name: DSP Audio Streamer
+      description: DSP Audio Streamer Framework based on Xtensa Audio Framework from
+        Cadence Design Systems for Xtensa DSP Audio Engines.
+    path: mcuxsdk/middleware/cadence/multicore-xaf
+    revision: a27a7b238403b586da1cf38ac01cef61848082a1
+    groups:
+    - bifrost
+  - name: dsp-codecs
+    userdata:
+      owner: tomas.barak@nxp.com
+      track_branch: main
+      branch_flow: false
+      display_name: Codecs for Cadence DSP platforms
+      description: DSP Audio codecs for HiFi1, HiFi4, FusionF1 cores
+    path: mcuxsdk/middleware/cadence/codecs
+    revision: d4e162392066a3106b5318759e6fa5033cebc263
+    groups:
+    - bifrost
+  - name: naturedsp
+    userdata:
+      owner: tomas.barak@nxp.com
+      track_branch: main
+      branch_flow: false
+      has_examples: true
+      display_name: NatureDSP
+      description: Digital Signal Processing for Xtensa HiFi1, HiFi4, FusionF1 Audio
+        Engines
+    path: mcuxsdk/middleware/cadence/naturedsp
+    revision: 65ccdc0167e802dad626c9f675ddaadf81a1e6e9
+    groups:
+    - bifrost
+  - name: nnlib
+    userdata:
+      owner: tomas.barak@nxp.com
+      track_branch: main
+      branch_flow: false
+      display_name: DSP Neural Networks
+      description: DSP Neural Networks Framework based on Xtensa Neural Networks Library
+        from Cadence Design Systems for Xtensa HiFi Audio Engines.
+    path: mcuxsdk/middleware/cadence/nnlib
+    revision: 9b6b8156bcdb1afa31c90956698e94b4f30f9452
+    groups:
+    - bifrost

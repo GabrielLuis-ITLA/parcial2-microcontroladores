@@ -1,0 +1,147 @@
+example_list:
+- component_examples
+- demo_apps
+- display_examples
+- driver_examples
+- eiq_examples
+- ele_crypto
+- freemaster_examples
+- freertos_examples
+- littlefs_examples
+- lvgl_examples
+- lwip_examples
+- mbedtls3x_examples
+- ota_examples
+- sdmmc_examples
+- usb_examples
+- wifi_examples
+
+
+
+
+# Package tailoring: trim devices/ and drivers/ to only what this board needs.
+# Derived from device Kconfig.chip IP support variants (via MIR board->device mapping).
+devices_filter:
+  - RT/RT2660
+
+drivers_filter:
+  - acmp
+  - asrc
+  - cache
+  - clock
+  - common
+  - crc
+  - csi
+  - dac_1
+  - dcif_1
+  - edma4
+  - edma_unified
+  - enet
+  - enet_qos
+  - eqdc
+  - evtg
+  - ewm
+  - flexcan
+  - flexio
+  - flexpwm
+  - flexspi_flr
+  - gpio
+  - i3c
+  - inputmux
+  - iomuxc
+  - irtc
+  - isi
+  - jpegdec
+  - lpadc
+  - lpc_freqme
+  - lpi2c
+  - lpit
+  - lpspi
+  - lptmr
+  - lpuart
+  - mcm
+  - mipi_csi2rx_rambus
+  - mipi_dsi_split_1
+  - mmu
+  - pdcon
+  - pdm
+  - power
+  - powercon
+  - pwm
+  - qtmr_1
+  - reformatter
+  - reset
+  - rt2k_pmu
+  - s3mu
+  - sai
+  - sinc
+  - sramc_1
+  - sramctl
+  - stm
+  - swt
+  - tdet
+  - tenbaset_phy
+  - tpm
+  - trdc_1
+  - trgsync
+  - usdhc
+  - xbar_1
+  - xspi
+
+repo_list:
+- CMSIS
+- aws_iot_llhttp
+- backoffalgorithm
+- backoffalgorithm-upstream
+- cjson
+- core
+- corehttp
+- corehttp-upstream
+- corejson
+- corejson-upstream
+- coremqtt
+- coremqtt-upstream
+- corepkcs11
+- corepkcs11-upstream
+- dhara
+- fatfs
+- freemaster
+- freertos-kernel
+- freertos-kernel-upstream
+- fw_bin
+- lab-project-freertos-posix
+- lab-project-freertos-posix-upstream
+- libjpeg
+- littlefs
+- lvgl
+- lwip
+- mbedtls
+- mbedtls3x
+- mcu-sdk-components
+- mcu-sdk-doc
+- mcu-sdk-examples
+- mcuboot_opensource
+- mcux-devices-rt
+- mcux-freertos-drivers
+- mcux-sdk-middleware-eiq
+- mcux-sdk-middleware-eiq-int
+- mcux-sdk-middleware-mpp
+- mcux-sdk-middleware-sdmmc
+- mcux-sdk-middleware-tensorflow
+- mcuxsdk-middleware-executorch
+- mcuxsdk-tool-data
+- motor_control
+- openh264
+- pkcs11
+- pngdec
+- psa-arch-tests
+- psa_crypto_driver
+- qcbor
+- rtcesl
+- tf-m-tests
+- tf-psa-crypto
+- tfm
+- tinycbor
+- usb
+- wifi_nxp
+- wpa_supplicant-rtos

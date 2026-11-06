@@ -1,0 +1,74 @@
+example_list:
+- cmsis_driver_examples
+- component_examples
+- demo_apps
+- driver_examples
+- freemaster_examples
+
+
+
+
+
+# Package tailoring: trim devices/ and drivers/ to only what this board needs.
+# Derived from device Kconfig.chip IP support variants (via MIR board->device mapping).
+devices_filter:
+  - MCX/MCXA
+
+drivers_filter:
+  - aoi
+  - cache
+  - cdog
+  - clock
+  - common
+  - crc
+  - ctimer
+  - dac_1
+  - edma4
+  - edma_unified
+  - eim
+  - eqdc
+  - erm
+  - flexcan
+  - flexpwm
+  - glikey
+  - gpio
+  - inputmux
+  - iomuxc
+  - lpadc
+  - lpc_freqme
+  - lpcmp
+  - lpi2c
+  - lpspi
+  - lptmr
+  - lpuart
+  - mau
+  - mcx_cmc
+  - mcx_spc
+  - mcx_vbat
+  - opamp_fast
+  - ostimer
+  - port
+  - power
+  - pwm
+  - reset
+  - rtc
+  - smartcard
+  - smartdma
+  - tdet
+  - trdc_1
+  - utick
+  - waketimer
+  - wuu
+  - wwdt
+
+repo_list:
+- core
+- CMSIS
+- mcuxsdk-tool-data
+- mcu-sdk-components
+- mcu-sdk-doc
+- mcu-sdk-examples
+- mcux-devices-mcx
+- motor_control
+- rtcesl
+- freemaster

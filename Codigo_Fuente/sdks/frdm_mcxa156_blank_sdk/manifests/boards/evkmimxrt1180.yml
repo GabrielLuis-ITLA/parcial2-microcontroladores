@@ -1,0 +1,153 @@
+example_list:
+- bootloader_examples
+- canopennode_examples
+- cmsis_driver_examples
+- component_examples
+- demo_apps
+- digital_encoder_examples
+- driver_examples
+- ecat_examples
+- eiq_examples
+- ele_crypto
+- freemaster_examples
+- freertos_examples
+- littlefs_examples
+- lwip_examples
+- mbedtls3x_examples
+- mbedtls_examples
+- modbus_examples
+- multicore_examples
+- multiprocessor_examples
+- ota_examples
+- sdmmc_examples
+- soem_examples
+- usb_examples
+- wifi_examples
+
+
+
+
+
+# Package tailoring: trim devices/ and drivers/ to only what this board needs.
+# Derived from device Kconfig.chip IP support variants (via MIR board->device mapping).
+devices_filter:
+  - RT/RT1180
+
+drivers_filter:
+  - acmp
+  - aoi
+  - asrc
+  - bbnsm
+  - cache
+  - clock
+  - common
+  - dac12
+  - ecat
+  - edma4
+  - edma_unified
+  - eqdc
+  - ewm
+  - flexcan
+  - flexio
+  - flexpwm
+  - flexspi
+  - flexspi_flr
+  - gpt
+  - i3c
+  - iee
+  - iee_apc
+  - iomuxc
+  - kpp
+  - lpadc
+  - lpi2c
+  - lpit
+  - lpspi
+  - lptmr
+  - lpuart
+  - mecc
+  - msgintr
+  - mu1
+  - netc
+  - otfad
+  - pdm
+  - power
+  - pwm
+  - qtmr_1
+  - reset
+  - rgpio
+  - rtwdog
+  - s3mu
+  - sai
+  - sema42
+  - semc
+  - sinc
+  - smartcard
+  - spdif
+  - sramc
+  - sysctr
+  - syspm
+  - tempsensor
+  - tpm
+  - trdc
+  - tstmr
+  - usdhc
+  - vref_1
+  - xbar_1
+
+repo_list:
+- CMSIS
+- aws_iot_llhttp
+- backoffalgorithm
+- backoffalgorithm-upstream
+- canopennode
+- core
+- corehttp
+- corehttp-upstream
+- corejson
+- corejson-upstream
+- coremqtt
+- coremqtt-upstream
+- corepkcs11
+- corepkcs11-upstream
+- dhara
+- edgefast_open
+- edgelock
+- erpc
+- ethermind
+- fatfs
+- freemaster
+- freemodbus
+- freertos-kernel
+- freertos-kernel-upstream
+- littlefs
+- lwip
+- mbedtls
+- mbedtls3x
+- mcu-sdk-components
+- fw_bin
+- mcu-sdk-doc
+- mcu-sdk-examples
+- mcu_bootloader
+- mcuboot_opensource
+- mcux-devices-rt
+- mcux-mcmgr
+- mcux-sdk-middleware-eiq
+- mcux-sdk-middleware-multicore
+- mcux-sdk-middleware-sdmmc
+- mcux-sdk-middleware-tensorflow
+- mcux-sdk-middleware-mpp
+- mcuxsdk-middleware-executorch
+- mcuxsdk-tool-data
+- motor_control
+- pkcs11
+- psa-arch-tests
+- psa_crypto_driver
+- rpmsg-lite
+- rtcesl
+- soem
+- tf-psa-crypto
+- tfm
+- tinycbor
+- usb
+- wifi_nxp
+- wpa_supplicant-rtos
