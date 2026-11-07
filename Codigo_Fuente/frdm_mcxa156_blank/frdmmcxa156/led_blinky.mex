@@ -30,6 +30,7 @@
             <pin_labels>
                <pin_label pin_num="63" pin_signal="P3_12/LPUART2_RTS_B/LPUART3_TXD/CT1_MAT2/PWM0_X0/FLEXIO0_D20/PWM1_A2" label="LED_RED" identifier="LED_RED"/>
                <pin_label pin_num="100" pin_signal="P1_7/TRIG_OUT2/LPUART2_CTS_B/CT_INP7/CT4_MAT1/FLEXIO0_D15" label="SW2" identifier="SW2"/>
+               <pin_label pin_num="72" pin_signal="P3_1/TRIG_IN1/LPUART3_TXD/CT_INP17/PWM0_B0/FLEXIO0_D9/PWM1_X1" label="LED_ACTIVIDAD" identifier="LED_ACTIVIDAD"/>
             </pin_labels>
          </pins_profile>
          <functions_list>
@@ -51,6 +52,11 @@
                         <data>true</data>
                      </feature>
                   </dependency>
+                  <dependency resourceType="Peripheral" resourceId="ADC1" description="Peripheral ADC1 signals are routed in the Pins Tool, but the peripheral is not initialized in the Peripherals Tool." problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
                   <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Pins initialization requires the COMMON Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
                      <feature name="enabled" evaluation="equal" configuration="cm33_core0">
                         <data>true</data>
@@ -68,18 +74,6 @@
                   </dependency>
                </dependencies>
                <pins>
-                  <pin peripheral="GPIO3" signal="GPIO, 12" pin_num="63" pin_signal="P3_12/LPUART2_RTS_B/LPUART3_TXD/CT1_MAT2/PWM0_X0/FLEXIO0_D20/PWM1_A2">
-                     <pin_features>
-                        <pin_feature name="direction" value="OUTPUT"/>
-                        <pin_feature name="slew_rate" value="fast"/>
-                        <pin_feature name="open_drain" value="disable"/>
-                        <pin_feature name="drive_strength" value="low"/>
-                        <pin_feature name="pull_select" value="down"/>
-                        <pin_feature name="pull_enable" value="disable"/>
-                        <pin_feature name="input_buffer" value="enable"/>
-                        <pin_feature name="invert_input" value="normal"/>
-                     </pin_features>
-                  </pin>
                   <pin peripheral="GPIO1" signal="GPIO, 7" pin_num="100" pin_signal="P1_7/TRIG_OUT2/LPUART2_CTS_B/CT_INP7/CT4_MAT1/FLEXIO0_D15">
                      <pin_features>
                         <pin_feature name="direction" value="INPUT"/>
@@ -94,6 +88,12 @@
                   </pin>
                   <pin peripheral="LPUART0" signal="RX" pin_num="78" pin_signal="P0_2/TDO/SWO/LPUART0_RXD/LPSPI0_SCK/CT0_MAT0/UTICK_CAP0/FLEXIO0_D2"/>
                   <pin peripheral="LPUART0" signal="TX" pin_num="79" pin_signal="P0_3/TDI/LPUART0_TXD/LPSPI0_SDO/CT0_MAT1/UTICK_CAP1/FLEXIO0_D3/CMP0_OUT"/>
+                  <pin peripheral="GPIO3" signal="GPIO, 1" pin_num="72" pin_signal="P3_1/TRIG_IN1/LPUART3_TXD/CT_INP17/PWM0_B0/FLEXIO0_D9/PWM1_X1">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="ADC1" signal="A, 8" pin_num="3" pin_signal="P1_10/LPUART1_RTS_B/LPI2C2_SDAS/CT2_MAT0/FLEXIO0_D18"/>
                </pins>
             </function>
          </functions_list>
@@ -129,6 +129,7 @@
                </dependencies>
                <clock_sources/>
                <clock_outputs>
+                  <clock_output id="ADC1_clock.outFreq" value="12 MHz" locked="false" accuracy=""/>
                   <clock_output id="CLK_1M_clock.outFreq" value="1 MHz" locked="false" accuracy=""/>
                   <clock_output id="CPU_clock.outFreq" value="12 MHz" locked="false" accuracy=""/>
                   <clock_output id="CTIMER0_clock.outFreq" value="12 MHz" locked="false" accuracy=""/>
@@ -142,8 +143,10 @@
                </clock_outputs>
                <clock_settings>
                   <setting id="SCGMode" value="SIRC" locked="false"/>
+                  <setting id="ADC1CLKDIV_HALT" value="Enable" locked="false"/>
                   <setting id="CTIMER0CLKDIV_HALT" value="Enable" locked="false"/>
                   <setting id="FRO_HF_PERIPHERALS_EN_CFG" value="Disabled" locked="false"/>
+                  <setting id="MRCC.ADC1CLKSEL.sel" value="SCG.FRO_12M" locked="false"/>
                   <setting id="MRCC.CTIMER0CLKSEL.sel" value="SCG.FRO_12M" locked="false"/>
                   <setting id="MRCC.FREQMEREFCLKSEL.sel" value="MRCC.aoi0_out0" locked="false"/>
                   <setting id="MRCC.FREQMETARGETCLKSEL.sel" value="MRCC.aoi0_out0" locked="false"/>
@@ -344,7 +347,17 @@
       </dcdx>
       <periphs name="Peripherals" version="15.0" enabled="true" update_project_code="true">
          <dependencies>
-            <dependency resourceType="Tool" resourceId="Clocks" description="The Clocks tool is required by the Peripherals tool, but it is disabled." problem_level="2" source="Peripherals">
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.lpadc" description="LPADC Driver is not found in the toolchain/IDE project. The project will not compile!" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.lpadc" description="An unsupported version of the LPADC Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. The project might not compile correctly." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="greaterOrEqual">
+                  <data type="Version" maxValue="2.11.99">2.8.1</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="Tool" resourceId="Pins" description="The Pins tool is required by the Peripherals tool, but it is disabled." problem_level="2" source="Peripherals">
                <feature name="enabled" evaluation="equal">
                   <data>true</data>
                </feature>
@@ -361,7 +374,18 @@
             <functional_group name="BOARD_InitPeripherals" uuid="9c69b39f-9abc-4e8a-8540-8e1714f5fb00" called_from_default_init="true" id_prefix="" core="cm33_core0">
                <description></description>
                <options/>
-               <dependencies/>
+               <dependencies>
+                  <dependency resourceType="ClockOutput" resourceId="ADC1_clock" description="ADC1_clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="ADC1.adc_se.8A" description="Signal channel 8A is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
                <instances>
                   <instance name="NVIC" uuid="bfae73d6-afab-41fc-b34b-bc15873d0c78" type="nvic" type_id="nvic" mode="general" peripheral="NVIC" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
                      <config_set name="nvic">
@@ -382,6 +406,69 @@
                            <setting name="IRQn" value="SysTick_IRQn"/>
                            <setting name="enable_custom_name" value="true"/>
                            <setting name="handler_custom_name" value="SysTick_Handler"/>
+                        </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="ADC1" uuid="194a2062-57c8-4439-bc40-c69f76f0af43" type="lpadc" type_id="lpadc_2.8.1" mode="LPADC" peripheral="ADC1" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="fsl_lpadc">
+                        <struct name="lpadcConfig">
+                           <setting name="clockSource" value="AsynchronousFunctionClock"/>
+                           <setting name="clockSourceFreq" value="ClocksTool_DefaultInit"/>
+                           <setting name="enableJustifiedLeft" value="false"/>
+                           <setting name="enableInDozeMode" value="true"/>
+                           <setting name="conversionAverageMode" value="kLPADC_ConversionAverage1"/>
+                           <setting name="offsetCalibration" value="no"/>
+                           <setting name="autoCalibrate" value="false"/>
+                           <setting name="enableAnalogPreliminary" value="false"/>
+                           <setting name="powerUpDelay" value="0x80"/>
+                           <setting name="referenceVoltageSource" value="kLPADC_ReferenceVoltageAlt1"/>
+                           <setting name="powerLevelMode" value="kLPADC_PowerLevelAlt1"/>
+                           <setting name="triggerPriorityPolicy" value="kLPADC_ConvPreemptImmediatelyNotAutoResumed"/>
+                           <setting name="enableConvPause" value="false"/>
+                           <setting name="convPauseDelay" value="0"/>
+                           <setting name="FIFOWatermark" value="0"/>
+                           <setting name="FIFOWatermarkDMA" value="false"/>
+                        </struct>
+                        <array name="lpadcConvCommandConfig">
+                           <struct name="0">
+                              <setting name="user_commandId" value=""/>
+                              <setting name="commandId" value="1"/>
+                              <setting name="chainedNextCommandNumber" value="0"/>
+                              <setting name="sampleChannelMode" value="kLPADC_SampleChannelSingleEndSideA"/>
+                              <setting name="channelNumber" value="A.8"/>
+                              <setting name="enableAutoChannelIncrement" value="false"/>
+                              <setting name="loopCount" value="0"/>
+                              <setting name="hardwareAverageMode" value="kLPADC_HardwareAverageCount1"/>
+                              <setting name="sampleTimeMode" value="kLPADC_SampleTimeADCK3"/>
+                              <setting name="hardwareCompareMode" value="kLPADC_HardwareCompareDisabled"/>
+                              <setting name="hardwareCompareValueHigh" value="0"/>
+                              <setting name="hardwareCompareValueLow" value="0"/>
+                              <setting name="conversionResoultuionMode" value="kLPADC_ConversionResolutionStandard"/>
+                              <setting name="enableWaitTrigger" value="false"/>
+                           </struct>
+                        </array>
+                        <array name="lpadcConvTriggerConfig">
+                           <struct name="0">
+                              <setting name="user_triggerId" value=""/>
+                              <setting name="triggerId" value="0"/>
+                              <setting name="targetCommandId" value="1"/>
+                              <setting name="delayPower" value="0"/>
+                              <setting name="priority" value="false"/>
+                              <setting name="enableHardwareTrigger" value="false"/>
+                           </struct>
+                        </array>
+                        <struct name="IRQ_cfg">
+                           <set name="interrupt_type">
+                              <selected/>
+                           </set>
+                           <setting name="enable_irq" value="false"/>
+                           <struct name="adc_interrupt">
+                              <setting name="IRQn" value="ADC0_IRQn"/>
+                              <setting name="enable_interrrupt" value="enabled"/>
+                              <setting name="enable_priority" value="false"/>
+                              <setting name="priority" value="0"/>
+                              <setting name="enable_custom_name" value="false"/>
+                           </struct>
                         </struct>
                      </config_set>
                   </instance>

@@ -10,6 +10,7 @@
  * Included files
  **********************************************************************************************************************/
 #include "fsl_common.h"
+#include "fsl_lpadc.h"
 
 #if defined(__cplusplus)
 extern "C" {
@@ -28,6 +29,15 @@ extern "C" {
 #define SYSTICK_TIMER_REFERENCE_IRQN SysTick_IRQn
 /* SysTick interrupt handler identifier. */
 #define SysTick_Handler SysTick_Handler
+/* Alias for ADC1 peripheral */
+#define ADC1_PERIPHERAL ADC1
+
+/***********************************************************************************************************************
+ * Global variables
+ **********************************************************************************************************************/
+extern const lpadc_config_t ADC1_config;
+extern lpadc_conv_command_config_t ADC1_commandsConfig[1];
+extern lpadc_conv_trigger_config_t ADC1_triggersConfig[1];
 
 /***********************************************************************************************************************
  * Initialization functions

@@ -2738,14 +2738,14 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "footprint::@7f73aa44d57b7279e1d5",
-					"jsonFile" : "target-footprint-debug-d3439d9055ef4ea34132.json",
+					"jsonFile" : "target-footprint-debug-9d733f467c160eee96a0.json",
 					"name" : "footprint",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "frdm_mcxa156_blank::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-frdm_mcxa156_blank-debug-58942c20418a7bff9127.json",
+					"jsonFile" : "target-frdm_mcxa156_blank-debug-28b0152e3e83b0c3b2c7.json",
 					"name" : "frdm_mcxa156_blank",
 					"projectIndex" : 0
 				},

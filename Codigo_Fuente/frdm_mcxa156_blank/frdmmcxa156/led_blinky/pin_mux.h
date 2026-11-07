@@ -25,24 +25,10 @@ extern "C" {
  */
 void BOARD_InitBootPins(void);
 
+#define PCR_IBE_ibe0 0x00u /*!<@brief Input Buffer Enable: Disables */
 #define PCR_IBE_ibe1 0x01u /*!<@brief Input Buffer Enable: Enables */
 #define PCR_PE_pe1 0x01u   /*!<@brief Pull Enable: Enables */
 #define PCR_PS_ps1 0x01u   /*!<@brief Pull Select: Enables internal pullup resistor */
-
-/*! @name PORT3_12 (number 63), LED_RED
-  @{ */
-
-/* Symbols to be used with GPIO driver */
-#define BOARD_INITPINS_LED_RED_GPIO GPIO3                /*!<@brief GPIO peripheral base pointer */
-#define BOARD_INITPINS_LED_RED_INIT_GPIO_VALUE 0U        /*!<@brief GPIO output initial state */
-#define BOARD_INITPINS_LED_RED_GPIO_PIN 12U              /*!<@brief GPIO pin number */
-#define BOARD_INITPINS_LED_RED_GPIO_PIN_MASK (1U << 12U) /*!<@brief GPIO pin mask */
-
-/* Symbols to be used with PORT driver */
-#define BOARD_INITPINS_LED_RED_PORT PORT3                /*!<@brief PORT peripheral base pointer */
-#define BOARD_INITPINS_LED_RED_PIN 12U                   /*!<@brief PORT pin number */
-#define BOARD_INITPINS_LED_RED_PIN_MASK (1U << 12U)      /*!<@brief PORT pin mask */
-                                                         /* @} */
 
 /*! @name PORT1_7 (number 100), SW2
   @{ */
@@ -57,6 +43,21 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_SW2_PIN 7U                   /*!<@brief PORT pin number */
 #define BOARD_INITPINS_SW2_PIN_MASK (1U << 7U)      /*!<@brief PORT pin mask */
                                                     /* @} */
+
+/*! @name PORT3_1 (number 72), LED_ACTIVIDAD
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITPINS_LED_ACTIVIDAD_GPIO GPIO3               /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITPINS_LED_ACTIVIDAD_INIT_GPIO_VALUE 0U       /*!<@brief GPIO output initial state */
+#define BOARD_INITPINS_LED_ACTIVIDAD_GPIO_PIN 1U              /*!<@brief GPIO pin number */
+#define BOARD_INITPINS_LED_ACTIVIDAD_GPIO_PIN_MASK (1U << 1U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define BOARD_INITPINS_LED_ACTIVIDAD_PORT PORT3               /*!<@brief PORT peripheral base pointer */
+#define BOARD_INITPINS_LED_ACTIVIDAD_PIN 1U                   /*!<@brief PORT pin number */
+#define BOARD_INITPINS_LED_ACTIVIDAD_PIN_MASK (1U << 1U)      /*!<@brief PORT pin mask */
+                                                              /* @} */
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.

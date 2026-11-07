@@ -1657,6 +1657,7 @@
     [
       "MCUX_COMPONENT_driver.ctimer && MCUX_HAS_COMPONENT_driver.ctimer",
       "MCUX_COMPONENT_driver.gpio && MCUX_HAS_COMPONENT_driver.gpio",
+      "MCUX_COMPONENT_driver.lpadc && MCUX_HAS_COMPONENT_driver.lpadc",
       "MCUX_COMPONENT_driver.lpuart && MCUX_HAS_COMPONENT_driver.lpuart",
       "MCUX_COMPONENT_driver.mcx_spc && MCUX_HAS_COMPONENT_driver.mcx_spc",
       "MCUX_COMPONENT_driver.port && MCUX_HAS_COMPONENT_driver.port",
@@ -2285,11 +2286,55 @@
     "CONFIG_MCUX_COMPONENT_driver.lpadc",
     "y",
     "bool",
-    "n",
+    "y",
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
       262
+    ]
+  ],
+  [
+    "CONFIG_LPADC_CONVERSION_COMPLETE_TIMEOUT",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
+      263
+    ]
+  ],
+  [
+    "CONFIG_LPADC_CALIBRATION_READY_TIMEOUT",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
+      264
+    ]
+  ],
+  [
+    "CONFIG_LPADC_GAIN_CAL_READY_TIMEOUT",
+    "y",
+    "int",
+    "0",
+    "assign",
+    [
+      "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
+      265
+    ]
+  ],
+  [
+    "CONFIG_LPADC_USE_FIXED_POINT_GAIN_CALCULATION",
+    "y",
+    "bool",
+    "n",
+    "assign",
+    [
+      "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
+      266
     ]
   ],
   [
@@ -2311,7 +2356,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      264
+      268
     ]
   ],
   [
@@ -2333,7 +2378,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      266
+      270
     ]
   ],
   [
@@ -2366,7 +2411,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      269
+      273
     ]
   ],
   [
@@ -2377,7 +2422,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      270
+      274
     ]
   ],
   [
@@ -2410,7 +2455,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      273
+      277
     ]
   ],
   [
@@ -2421,7 +2466,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      274
+      278
     ]
   ],
   [
@@ -2443,7 +2488,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      276
+      280
     ]
   ],
   [
@@ -2476,7 +2521,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      279
+      283
     ]
   ],
   [
@@ -2508,7 +2553,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      282
+      286
     ]
   ],
   [
@@ -2551,7 +2596,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      286
+      290
     ]
   ],
   [
@@ -2573,7 +2618,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      288
+      292
     ]
   ],
   [
@@ -2595,7 +2640,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      290
+      294
     ]
   ],
   [
@@ -2617,7 +2662,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      292
+      296
     ]
   ],
   [
@@ -2639,7 +2684,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      294
+      298
     ]
   ],
   [
@@ -2661,7 +2706,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      296
+      300
     ]
   ],
   [
@@ -2683,7 +2728,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      298
+      302
     ]
   ],
   [
@@ -2705,7 +2750,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      300
+      304
     ]
   ],
   [
@@ -2727,7 +2772,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      302
+      306
     ]
   ],
   [
@@ -2749,7 +2794,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      304
+      308
     ]
   ],
   [
@@ -2760,7 +2805,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      305
+      309
     ]
   ],
   [
@@ -2771,7 +2816,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      315
+      319
     ]
   ],
   [
@@ -2782,7 +2827,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      316
+      320
     ]
   ],
   [
@@ -2793,7 +2838,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      317
+      321
     ]
   ],
   [
@@ -2804,7 +2849,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      318
+      322
     ]
   ],
   [
@@ -2826,7 +2871,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      325
+      329
     ]
   ],
   [
@@ -2848,7 +2893,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      327
+      331
     ]
   ],
   [
@@ -2870,7 +2915,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      329
+      333
     ]
   ],
   [
@@ -2892,7 +2937,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      331
+      335
     ]
   ],
   [
@@ -2914,7 +2959,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      333
+      337
     ]
   ],
   [
@@ -2936,7 +2981,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      335
+      339
     ]
   ],
   [
@@ -2947,7 +2992,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      341
+      345
     ]
   ],
   [
@@ -2958,7 +3003,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      342
+      346
     ]
   ],
   [
@@ -2969,7 +3014,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      343
+      347
     ]
   ],
   [
@@ -2980,7 +3025,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      344
+      348
     ]
   ],
   [
@@ -2991,7 +3036,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      345
+      349
     ]
   ],
   [
@@ -3012,7 +3057,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      347
+      351
     ]
   ],
   [
@@ -3023,7 +3068,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      348
+      352
     ]
   ],
   [
@@ -3034,7 +3079,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      349
+      353
     ]
   ],
   [
@@ -3045,7 +3090,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      355
+      359
     ]
   ],
   [
@@ -3066,7 +3111,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      357
+      361
     ]
   ],
   [
@@ -3077,7 +3122,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      358
+      362
     ]
   ],
   [
@@ -3088,7 +3133,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      359
+      363
     ]
   ],
   [
@@ -3099,7 +3144,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      360
+      364
     ]
   ],
   [
@@ -3110,7 +3155,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      361
+      365
     ]
   ],
   [
@@ -3121,7 +3166,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      362
+      366
     ]
   ],
   [
@@ -3132,7 +3177,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      363
+      367
     ]
   ],
   [
@@ -3143,7 +3188,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      364
+      368
     ]
   ],
   [
@@ -3154,7 +3199,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      365
+      369
     ]
   ],
   [
@@ -3165,7 +3210,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      366
+      370
     ]
   ],
   [
@@ -3176,7 +3221,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      367
+      371
     ]
   ],
   [
@@ -3187,7 +3232,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      368
+      372
     ]
   ],
   [
@@ -3198,7 +3243,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      369
+      373
     ]
   ],
   [
@@ -3209,7 +3254,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      370
+      374
     ]
   ],
   [
@@ -3220,7 +3265,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      375
+      379
     ]
   ],
   [
@@ -3231,7 +3276,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      376
+      380
     ]
   ],
   [
@@ -3242,7 +3287,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      383
+      387
     ]
   ],
   [
@@ -3253,7 +3298,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      384
+      388
     ]
   ],
   [
@@ -3264,7 +3309,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      385
+      389
     ]
   ],
   [
@@ -3275,7 +3320,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      386
+      390
     ]
   ],
   [
@@ -3286,7 +3331,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      387
+      391
     ]
   ],
   [
@@ -3297,7 +3342,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      388
+      392
     ]
   ],
   [
@@ -3308,7 +3353,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      389
+      393
     ]
   ],
   [
@@ -3319,7 +3364,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      390
+      394
     ]
   ],
   [
@@ -3330,7 +3375,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      391
+      395
     ]
   ],
   [
@@ -3341,7 +3386,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      392
+      396
     ]
   ],
   [
@@ -3352,7 +3397,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      393
+      397
     ]
   ],
   [
@@ -3363,7 +3408,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      394
+      398
     ]
   ],
   [
@@ -3374,7 +3419,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      395
+      399
     ]
   ],
   [
@@ -3385,7 +3430,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      396
+      400
     ]
   ],
   [
@@ -3396,7 +3441,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      402
+      406
     ]
   ],
   [
@@ -3407,7 +3452,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      408
+      412
     ]
   ],
   [
@@ -3418,7 +3463,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      409
+      413
     ]
   ],
   [
@@ -3429,7 +3474,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      410
+      414
     ]
   ],
   [
@@ -3440,7 +3485,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      411
+      415
     ]
   ],
   [
@@ -3451,7 +3496,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      412
+      416
     ]
   ],
   [
@@ -3462,7 +3507,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      413
+      417
     ]
   ],
   [
@@ -3473,7 +3518,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      414
+      418
     ]
   ],
   [
@@ -3484,7 +3529,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      415
+      419
     ]
   ],
   [
@@ -3495,7 +3540,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      416
+      420
     ]
   ],
   [
@@ -3506,7 +3551,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      417
+      421
     ]
   ],
   [
@@ -3517,7 +3562,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      418
+      422
     ]
   ],
   [
@@ -3528,7 +3573,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      419
+      423
     ]
   ],
   [
@@ -3539,7 +3584,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      420
+      424
     ]
   ],
   [
@@ -3550,7 +3595,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      421
+      425
     ]
   ],
   [
@@ -3561,7 +3606,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      422
+      426
     ]
   ],
   [
@@ -3572,7 +3617,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      423
+      427
     ]
   ],
   [
@@ -3583,7 +3628,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      424
+      428
     ]
   ],
   [
@@ -3594,7 +3639,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      425
+      429
     ]
   ],
   [
@@ -3605,7 +3650,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      426
+      430
     ]
   ],
   [
@@ -3616,7 +3661,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      427
+      431
     ]
   ],
   [
@@ -3627,7 +3672,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      428
+      432
     ]
   ],
   [
@@ -3638,7 +3683,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      429
+      433
     ]
   ],
   [
@@ -3649,7 +3694,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      430
+      434
     ]
   ],
   [
@@ -3660,7 +3705,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      431
+      435
     ]
   ],
   [
@@ -3671,7 +3716,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      432
+      436
     ]
   ],
   [
@@ -3682,7 +3727,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      433
+      437
     ]
   ],
   [
@@ -3693,7 +3738,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      434
+      438
     ]
   ],
   [
@@ -3704,7 +3749,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      435
+      439
     ]
   ],
   [
@@ -3715,7 +3760,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      436
+      440
     ]
   ],
   [
@@ -3726,7 +3771,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      437
+      441
     ]
   ],
   [
@@ -3737,7 +3782,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      438
+      442
     ]
   ],
   [
@@ -3748,7 +3793,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      439
+      443
     ]
   ],
   [
@@ -3759,7 +3804,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      440
+      444
     ]
   ],
   [
@@ -3770,7 +3815,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      445
+      449
     ]
   ],
   [
@@ -3781,7 +3826,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      446
+      450
     ]
   ],
   [
@@ -3792,7 +3837,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      447
+      451
     ]
   ],
   [
@@ -3803,7 +3848,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      453
+      457
     ]
   ],
   [
@@ -3814,7 +3859,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      454
+      458
     ]
   ],
   [
@@ -3825,7 +3870,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      457
+      461
     ]
   ],
   [
@@ -3836,7 +3881,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      458
+      462
     ]
   ],
   [
@@ -3847,7 +3892,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      464
+      468
     ]
   ],
   [
@@ -3858,7 +3903,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      465
+      469
     ]
   ],
   [
@@ -3869,7 +3914,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      471
+      475
     ]
   ],
   [
@@ -3880,7 +3925,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      477
+      481
     ]
   ],
   [
@@ -3891,7 +3936,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      478
+      482
     ]
   ],
   [
@@ -3902,7 +3947,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      479
+      483
     ]
   ],
   [
@@ -3913,7 +3958,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      480
+      484
     ]
   ],
   [
@@ -3924,7 +3969,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      481
+      485
     ]
   ],
   [
@@ -3935,7 +3980,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      482
+      486
     ]
   ],
   [
@@ -3946,7 +3991,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      483
+      487
     ]
   ],
   [
@@ -3957,7 +4002,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      484
+      488
     ]
   ],
   [
@@ -3968,7 +4013,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      485
+      489
     ]
   ],
   [
@@ -3979,7 +4024,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      486
+      490
     ]
   ],
   [
@@ -3990,7 +4035,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      496
+      500
     ]
   ],
   [
@@ -4001,7 +4046,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      502
+      506
     ]
   ],
   [
@@ -4012,7 +4057,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      508
+      512
     ]
   ],
   [
@@ -4023,7 +4068,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      514
+      518
     ]
   ],
   [
@@ -4034,7 +4079,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      521
+      525
     ]
   ],
   [
@@ -4045,7 +4090,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      526
+      530
     ]
   ],
   [
@@ -4056,7 +4101,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      527
+      531
     ]
   ],
   [
@@ -4067,7 +4112,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      528
+      532
     ]
   ],
   [
@@ -4078,7 +4123,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      529
+      533
     ]
   ],
   [
@@ -4089,7 +4134,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      530
+      534
     ]
   ],
   [
@@ -4100,7 +4145,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      531
+      535
     ]
   ],
   [
@@ -4111,7 +4156,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      534
+      538
     ]
   ],
   [
@@ -4122,7 +4167,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      535
+      539
     ]
   ],
   [
@@ -4133,7 +4178,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      541
+      545
     ]
   ],
   [
@@ -4144,7 +4189,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      542
+      546
     ]
   ],
   [
@@ -4155,7 +4200,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      548
+      552
     ]
   ],
   [
@@ -4166,7 +4211,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      549
+      553
     ]
   ],
   [
@@ -4177,7 +4222,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      550
+      554
     ]
   ],
   [
@@ -4188,7 +4233,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      551
+      555
     ]
   ],
   [
@@ -4199,7 +4244,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      552
+      556
     ]
   ],
   [
@@ -4210,7 +4255,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      553
+      557
     ]
   ],
   [
@@ -4221,7 +4266,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      554
+      558
     ]
   ],
   [
@@ -4232,7 +4277,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      555
+      559
     ]
   ],
   [
@@ -4243,7 +4288,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      556
+      560
     ]
   ],
   [
@@ -4254,7 +4299,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      557
+      561
     ]
   ],
   [
@@ -4265,7 +4310,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      558
+      562
     ]
   ],
   [
@@ -4276,7 +4321,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      559
+      563
     ]
   ],
   [
@@ -4287,7 +4332,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      560
+      564
     ]
   ],
   [
@@ -4298,7 +4343,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      561
+      565
     ]
   ],
   [
@@ -4309,7 +4354,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      567
+      571
     ]
   ],
   [
@@ -4320,7 +4365,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      568
+      572
     ]
   ],
   [
@@ -4331,7 +4376,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      573
+      577
     ]
   ],
   [
@@ -4342,7 +4387,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      574
+      578
     ]
   ],
   [
@@ -4353,7 +4398,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      575
+      579
     ]
   ],
   [
@@ -4364,7 +4409,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      576
+      580
     ]
   ],
   [
@@ -4375,7 +4420,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      577
+      581
     ]
   ],
   [
@@ -4386,7 +4431,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      578
+      582
     ]
   ],
   [
@@ -4397,7 +4442,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      579
+      583
     ]
   ],
   [
@@ -4408,7 +4453,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      580
+      584
     ]
   ],
   [
@@ -4419,7 +4464,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      581
+      585
     ]
   ],
   [
@@ -4430,7 +4475,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      587
+      591
     ]
   ],
   [
@@ -4441,7 +4486,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      588
+      592
     ]
   ],
   [
@@ -4452,7 +4497,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      589
+      593
     ]
   ],
   [
@@ -4463,7 +4508,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      590
+      594
     ]
   ],
   [
@@ -4474,7 +4519,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      591
+      595
     ]
   ],
   [
@@ -4485,7 +4530,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      592
+      596
     ]
   ],
   [
@@ -4496,7 +4541,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      593
+      597
     ]
   ],
   [
@@ -4507,7 +4552,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      594
+      598
     ]
   ],
   [
@@ -4518,7 +4563,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      595
+      599
     ]
   ],
   [
@@ -4529,7 +4574,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      596
+      600
     ]
   ],
   [
@@ -4540,7 +4585,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      597
+      601
     ]
   ],
   [
@@ -4551,7 +4596,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      598
+      602
     ]
   ],
   [
@@ -4562,7 +4607,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      599
+      603
     ]
   ],
   [
@@ -4573,7 +4618,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      605
+      609
     ]
   ],
   [
@@ -4584,7 +4629,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      606
+      610
     ]
   ],
   [
@@ -4595,7 +4640,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      607
+      611
     ]
   ],
   [
@@ -4606,7 +4651,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      608
+      612
     ]
   ],
   [
@@ -4617,7 +4662,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      609
+      613
     ]
   ],
   [
@@ -4628,7 +4673,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      610
+      614
     ]
   ],
   [
@@ -4639,7 +4684,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      616
+      620
     ]
   ],
   [
@@ -4650,7 +4695,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      617
+      621
     ]
   ],
   [
@@ -4661,7 +4706,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      618
+      622
     ]
   ],
   [
@@ -4672,7 +4717,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      624
+      628
     ]
   ],
   [
@@ -4683,7 +4728,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      625
+      629
     ]
   ],
   [
@@ -4694,7 +4739,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      626
+      630
     ]
   ],
   [
@@ -4705,7 +4750,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      627
+      631
     ]
   ],
   [
@@ -4716,7 +4761,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      628
+      632
     ]
   ],
   [
@@ -4727,7 +4772,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      629
+      633
     ]
   ],
   [
@@ -4738,7 +4783,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      630
+      634
     ]
   ],
   [
@@ -4749,7 +4794,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      636
+      640
     ]
   ],
   [
@@ -4760,7 +4805,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      637
+      641
     ]
   ],
   [
@@ -4771,7 +4816,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      638
+      642
     ]
   ],
   [
@@ -4782,7 +4827,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      639
+      643
     ]
   ],
   [
@@ -4793,7 +4838,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      642
+      646
     ]
   ],
   [
@@ -4804,7 +4849,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      648
+      652
     ]
   ],
   [
@@ -4815,7 +4860,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      649
+      653
     ]
   ],
   [
@@ -4826,7 +4871,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      650
+      654
     ]
   ],
   [
@@ -4837,7 +4882,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      651
+      655
     ]
   ],
   [
@@ -4848,7 +4893,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      652
+      656
     ]
   ],
   [
@@ -4859,7 +4904,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      653
+      657
     ]
   ],
   [
@@ -4870,7 +4915,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      654
+      658
     ]
   ],
   [
@@ -4881,7 +4926,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      655
+      659
     ]
   ],
   [
@@ -4892,7 +4937,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      656
+      660
     ]
   ],
   [
@@ -4903,7 +4948,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      657
+      661
     ]
   ],
   [
@@ -4914,7 +4959,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      658
+      662
     ]
   ],
   [
@@ -4925,7 +4970,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      659
+      663
     ]
   ],
   [
@@ -4936,7 +4981,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      660
+      664
     ]
   ],
   [
@@ -4947,7 +4992,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      661
+      665
     ]
   ],
   [
@@ -4958,7 +5003,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      662
+      666
     ]
   ],
   [
@@ -4969,7 +5014,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      663
+      667
     ]
   ],
   [
@@ -4980,7 +5025,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      664
+      668
     ]
   ],
   [
@@ -4991,7 +5036,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      667
+      671
     ]
   ],
   [
@@ -5002,7 +5047,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      672
+      676
     ]
   ],
   [
@@ -5013,7 +5058,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      678
+      682
     ]
   ],
   [
@@ -5024,7 +5069,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      684
+      688
     ]
   ],
   [
@@ -5035,7 +5080,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      685
+      689
     ]
   ],
   [
@@ -5046,7 +5091,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      686
+      690
     ]
   ],
   [
@@ -5057,7 +5102,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      687
+      691
     ]
   ],
   [
@@ -5068,7 +5113,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      688
+      692
     ]
   ],
   [
@@ -5079,7 +5124,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      689
+      693
     ]
   ],
   [
@@ -5090,7 +5135,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      690
+      694
     ]
   ],
   [
@@ -5101,7 +5146,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      691
+      695
     ]
   ],
   [
@@ -5112,7 +5157,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      692
+      696
     ]
   ],
   [
@@ -5123,7 +5168,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      693
+      697
     ]
   ],
   [
@@ -5134,7 +5179,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      694
+      698
     ]
   ],
   [
@@ -5145,7 +5190,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      700
+      704
     ]
   ],
   [
@@ -5156,7 +5201,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      701
+      705
     ]
   ],
   [
@@ -5167,7 +5212,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      707
+      711
     ]
   ],
   [
@@ -5178,7 +5223,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      708
+      712
     ]
   ],
   [
@@ -5189,7 +5234,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      709
+      713
     ]
   ],
   [
@@ -5200,7 +5245,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      719
+      723
     ]
   ],
   [
@@ -5211,7 +5256,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      720
+      724
     ]
   ],
   [
@@ -5222,7 +5267,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      721
+      725
     ]
   ],
   [
@@ -5233,7 +5278,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      722
+      726
     ]
   ],
   [
@@ -5244,7 +5289,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      725
+      729
     ]
   ],
   [
@@ -5255,7 +5300,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      726
+      730
     ]
   ],
   [
@@ -5266,7 +5311,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      727
+      731
     ]
   ],
   [
@@ -5277,7 +5322,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      733
+      737
     ]
   ],
   [
@@ -5288,7 +5333,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      738
+      742
     ]
   ],
   [
@@ -5299,7 +5344,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      739
+      743
     ]
   ],
   [
@@ -5310,7 +5355,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      740
+      744
     ]
   ],
   [
@@ -5321,7 +5366,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      741
+      745
     ]
   ],
   [
@@ -5332,7 +5377,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      742
+      746
     ]
   ],
   [
@@ -5343,7 +5388,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      749
+      753
     ]
   ],
   [
@@ -5354,7 +5399,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      750
+      754
     ]
   ],
   [
@@ -5365,7 +5410,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      751
+      755
     ]
   ],
   [
@@ -5376,7 +5421,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      757
+      761
     ]
   ],
   [
@@ -5387,7 +5432,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      758
+      762
     ]
   ],
   [
@@ -5398,7 +5443,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      759
+      763
     ]
   ],
   [
@@ -5409,7 +5454,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      765
+      769
     ]
   ],
   [
@@ -5420,7 +5465,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      766
+      770
     ]
   ],
   [
@@ -5431,7 +5476,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      767
+      771
     ]
   ],
   [
@@ -5442,7 +5487,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      773
+      777
     ]
   ],
   [
@@ -5453,7 +5498,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      774
+      778
     ]
   ],
   [
@@ -5464,7 +5509,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      781
+      785
     ]
   ],
   [
@@ -5475,7 +5520,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      782
+      786
     ]
   ],
   [
@@ -5486,7 +5531,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      783
+      787
     ]
   ],
   [
@@ -5497,7 +5542,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      788
+      792
     ]
   ],
   [
@@ -5508,7 +5553,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      793
+      797
     ]
   ],
   [
@@ -5519,7 +5564,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      803
+      807
     ]
   ],
   [
@@ -5530,7 +5575,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      804
+      808
     ]
   ],
   [
@@ -5541,7 +5586,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      805
+      809
     ]
   ],
   [
@@ -5552,7 +5597,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      806
+      810
     ]
   ],
   [
@@ -5563,7 +5608,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      807
+      811
     ]
   ],
   [
@@ -5574,7 +5619,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      808
+      812
     ]
   ],
   [
@@ -5585,7 +5630,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      809
+      813
     ]
   ],
   [
@@ -5596,7 +5641,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      810
+      814
     ]
   ],
   [
@@ -5607,7 +5652,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      811
+      815
     ]
   ],
   [
@@ -5618,7 +5663,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      812
+      816
     ]
   ],
   [
@@ -5629,7 +5674,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      813
+      817
     ]
   ],
   [
@@ -5640,7 +5685,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      814
+      818
     ]
   ],
   [
@@ -5651,7 +5696,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      815
+      819
     ]
   ],
   [
@@ -5662,7 +5707,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      816
+      820
     ]
   ],
   [
@@ -5673,7 +5718,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      817
+      821
     ]
   ],
   [
@@ -5684,7 +5729,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      818
+      822
     ]
   ],
   [
@@ -5695,7 +5740,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      819
+      823
     ]
   ],
   [
@@ -5706,7 +5751,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      820
+      824
     ]
   ],
   [
@@ -5717,7 +5762,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      821
+      825
     ]
   ],
   [
@@ -5728,7 +5773,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      827
+      831
     ]
   ],
   [
@@ -5739,7 +5784,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      828
+      832
     ]
   ],
   [
@@ -5750,7 +5795,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      829
+      833
     ]
   ],
   [
@@ -5761,7 +5806,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      833
+      837
     ]
   ],
   [
@@ -5772,7 +5817,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      838
+      842
     ]
   ],
   [
@@ -5783,7 +5828,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      843
+      847
     ]
   ],
   [
@@ -5794,7 +5839,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      844
+      848
     ]
   ],
   [
@@ -5805,7 +5850,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      845
+      849
     ]
   ],
   [
@@ -5816,7 +5861,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      846
+      850
     ]
   ],
   [
@@ -5827,7 +5872,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      847
+      851
     ]
   ],
   [
@@ -5838,7 +5883,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      848
+      852
     ]
   ],
   [
@@ -5849,7 +5894,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      849
+      853
     ]
   ],
   [
@@ -5860,7 +5905,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      850
+      854
     ]
   ],
   [
@@ -5871,7 +5916,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      851
+      855
     ]
   ],
   [
@@ -5882,7 +5927,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      852
+      856
     ]
   ],
   [
@@ -5893,7 +5938,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      853
+      857
     ]
   ],
   [
@@ -5904,7 +5949,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      864
+      868
     ]
   ],
   [
@@ -5915,7 +5960,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      865
+      869
     ]
   ],
   [
@@ -5926,7 +5971,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      866
+      870
     ]
   ],
   [
@@ -5937,7 +5982,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      867
+      871
     ]
   ],
   [
@@ -5948,7 +5993,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      868
+      872
     ]
   ],
   [
@@ -5959,7 +6004,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      869
+      873
     ]
   ],
   [
@@ -5970,7 +6015,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      870
+      874
     ]
   ],
   [
@@ -5981,7 +6026,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      876
+      880
     ]
   ],
   [
@@ -5992,7 +6037,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      877
+      881
     ]
   ],
   [
@@ -6003,7 +6048,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      880
+      884
     ]
   ],
   [
@@ -6014,7 +6059,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      881
+      885
     ]
   ],
   [
@@ -6025,7 +6070,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      882
+      886
     ]
   ],
   [
@@ -6036,7 +6081,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      896
+      900
     ]
   ],
   [
@@ -6047,7 +6092,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      897
+      901
     ]
   ],
   [
@@ -6058,7 +6103,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      898
+      902
     ]
   ],
   [
@@ -6069,7 +6114,7 @@
     "assign",
     [
       "/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/frdm_mcxa156_blank/debug/.config",
-      899
+      903
     ]
   ],
   [

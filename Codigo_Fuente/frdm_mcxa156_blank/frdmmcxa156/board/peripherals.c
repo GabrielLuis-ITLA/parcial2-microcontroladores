@@ -112,12 +112,126 @@ static void SysTick_init(void) {
 }
 
 /***********************************************************************************************************************
+ * ADC1 initialization code
+ **********************************************************************************************************************/
+/* clang-format off */
+/* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
+instance:
+- name: 'ADC1'
+- type: 'lpadc'
+- mode: 'LPADC'
+- custom_name_enabled: 'false'
+- type_id: 'lpadc_2.8.1'
+- functional_group: 'BOARD_InitPeripherals'
+- peripheral: 'ADC1'
+- config_sets:
+  - fsl_lpadc:
+    - lpadcConfig:
+      - clockSource: 'AsynchronousFunctionClock'
+      - clockSourceFreq: 'ClocksTool_DefaultInit'
+      - enableJustifiedLeft: 'false'
+      - enableInDozeMode: 'true'
+      - conversionAverageMode: 'kLPADC_ConversionAverage1'
+      - offsetCalibration: 'no'
+      - autoCalibrate: 'false'
+      - enableAnalogPreliminary: 'false'
+      - powerUpDelay: '0x80'
+      - referenceVoltageSource: 'kLPADC_ReferenceVoltageAlt1'
+      - powerLevelMode: 'kLPADC_PowerLevelAlt1'
+      - triggerPriorityPolicy: 'kLPADC_ConvPreemptImmediatelyNotAutoResumed'
+      - enableConvPause: 'false'
+      - convPauseDelay: '0'
+      - FIFOWatermark: '0'
+      - FIFOWatermarkDMA: 'false'
+    - lpadcConvCommandConfig:
+      - 0:
+        - user_commandId: ''
+        - commandId: '1'
+        - chainedNextCommandNumber: '0'
+        - sampleChannelMode: 'kLPADC_SampleChannelSingleEndSideA'
+        - channelNumber: 'A.8'
+        - enableAutoChannelIncrement: 'false'
+        - loopCount: '0'
+        - hardwareAverageMode: 'kLPADC_HardwareAverageCount1'
+        - sampleTimeMode: 'kLPADC_SampleTimeADCK3'
+        - hardwareCompareMode: 'kLPADC_HardwareCompareDisabled'
+        - hardwareCompareValueHigh: '0'
+        - hardwareCompareValueLow: '0'
+        - conversionResoultuionMode: 'kLPADC_ConversionResolutionStandard'
+        - enableWaitTrigger: 'false'
+    - lpadcConvTriggerConfig:
+      - 0:
+        - user_triggerId: ''
+        - triggerId: '0'
+        - targetCommandId: '1'
+        - delayPower: '0'
+        - priority: 'false'
+        - enableHardwareTrigger: 'false'
+    - IRQ_cfg:
+      - interrupt_type: ''
+      - enable_irq: 'false'
+      - adc_interrupt:
+        - IRQn: 'ADC0_IRQn'
+        - enable_interrrupt: 'enabled'
+        - enable_priority: 'false'
+        - priority: '0'
+        - enable_custom_name: 'false'
+ * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
+/* clang-format on */
+const lpadc_config_t ADC1_config = {
+  .enableInDozeMode = true,
+  .conversionAverageMode = kLPADC_ConversionAverage1,
+  .enableAnalogPreliminary = false,
+  .powerUpDelay = 0x80UL,
+  .referenceVoltageSource = kLPADC_ReferenceVoltageAlt1,
+  .powerLevelMode = kLPADC_PowerLevelAlt1,
+  .triggerPriorityPolicy = kLPADC_ConvPreemptImmediatelyNotAutoResumed,
+  .enableConvPause = false,
+  .convPauseDelay = 0UL,
+  .FIFOWatermark = 0UL,
+};
+lpadc_conv_command_config_t ADC1_commandsConfig[1] = {
+  {
+    .sampleChannelMode = kLPADC_SampleChannelSingleEndSideA,
+    .channelNumber = 8U,
+    .chainedNextCommandNumber = 0,
+    .enableAutoChannelIncrement = false,
+    .loopCount = 0UL,
+    .hardwareAverageMode = kLPADC_HardwareAverageCount1,
+    .sampleTimeMode = kLPADC_SampleTimeADCK3,
+    .hardwareCompareMode = kLPADC_HardwareCompareDisabled,
+    .hardwareCompareValueHigh = 0UL,
+    .hardwareCompareValueLow = 0UL,
+    .conversionResolutionMode = kLPADC_ConversionResolutionStandard,
+    .enableWaitTrigger = false
+  }
+};
+lpadc_conv_trigger_config_t ADC1_triggersConfig[1] = {
+  {
+    .targetCommandId = 1,
+    .delayPower = 0UL,
+    .priority = 1,
+    .enableHardwareTrigger = false
+  }
+};
+
+static void ADC1_init(void) {
+  /* Initialize LPADC converter */
+  LPADC_Init(ADC1_PERIPHERAL, &ADC1_config);
+  /* Configure conversion command 1. */
+  LPADC_SetConvCommandConfig(ADC1_PERIPHERAL, 1, &ADC1_commandsConfig[0]);
+  /* Configure trigger 0. */
+  LPADC_SetConvTriggerConfig(ADC1_PERIPHERAL, 0, &ADC1_triggersConfig[0]);
+}
+
+/***********************************************************************************************************************
  * Initialization functions
  **********************************************************************************************************************/
 void BOARD_InitPeripherals(void)
 {
   /* Initialize components */
   SysTick_init();
+  ADC1_init();
 }
 
 /***********************************************************************************************************************
