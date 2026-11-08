@@ -1,4 +1,6 @@
 # Parcial 2 - Monitor de Señal Analógica con Alarma
+## 💻 Acceso Directo al Código
+**[➡️ Haz clic aquí para evaluar el código fuente principal (`Main.c`)](./Codigo_Fuente/frdm_mcxa156_blank/Main.c)**
 
 **Autor:** [Gabriel Isac Luis Fernandez]
 **Matrícula:** [2024-0990]
