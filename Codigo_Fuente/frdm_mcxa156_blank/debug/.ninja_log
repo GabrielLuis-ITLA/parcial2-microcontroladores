@@ -24,5 +24,5 @@
 652	1052	1794019160991926212	CMakeFiles/frdm_mcxa156_blank.dir/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/components/str/fsl_str.c.obj	49d18685fd592dd5
 18	424	1794106927130076758	CMakeFiles/frdm_mcxa156_blank.dir/Main.c.obj	8d6b09ddcb2e7624
 424	546	1794106927536289891	frdm_mcxa156_blank.elf	b1d73ad0d5758cd
-13	3129	1794108563451869996	build.ninja	b574125ade74ebd9
+13	3129	1794168643408795133	build.ninja	b574125ade74ebd9
 20	729	1794019160359764672	CMakeFiles/frdm_mcxa156_blank.dir/Users/gabrielluis/Documents/parcial2-microcontroladores/Codigo_Fuente/sdks/frdm_mcxa156_blank_sdk/mcuxsdk/drivers/lpadc/fsl_lpadc.c.obj	fb8f235e182a4334

@@ -27,3 +27,16 @@
 * **ADC:** 
   * Tensión de Referencia (VREF): `3.3V`
   * Resolución configurada: `12 bits`
+
+## 4. Cálculo del TIMER
+Para lograr una temporización exacta y asíncrona de 1 ms, se utilizó el periférico `CTIMER0`. El reloj principal de la placa está configurado a 12 MHz (12,000,000 Hz). 
+Para obtener una interrupción cada 1 milisegundo (1/1000 de segundo), el valor de coincidencia (*match value*) se calculó dividiendo la frecuencia base entre 1000:
+* **Fórmula:** `12,000,000 / 1000 = 12,000 ciclos`.
+
+## 5. Instrucciones de Compilación y Ejecución
+1. Clonar este repositorio y abrir la carpeta raíz en **VS Code**.
+2. Asegurarse de tener instalada la extensión **MCUXpresso for VS Code** (v26.9.44).
+3. En el panel lateral de MCUXpresso, hacer clic en **Build** (icono de martillo) para compilar el proyecto.
+4. Conectar la placa NXP FRDM-MCXA156 a la computadora a través del puerto USB (MCU-Link).
+5. En la sección "Debug Configurations", hacer clic en **Debug** (icono de play) para grabar el firmware en el microcontrolador.
+6. Abrir una terminal serial (como el Serial Monitor integrado, PuTTY o TeraTerm) conectada al puerto COM de la placa configurado a **115200 baudios, 8N1**.
