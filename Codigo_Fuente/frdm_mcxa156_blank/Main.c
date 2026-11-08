@@ -9,6 +9,9 @@
 #include "fsl_reset.h"
 #include "peripherals.h"
 #include "fsl_lpadc.h"
+#include "fsl_lpuart.h"
+#include <string.h>
+#include <stdio.h>
 
 #define UMBRAL_REBOTES 30
 #define CTIMER_FREQ_1MS (12000000/1000)
@@ -30,6 +33,9 @@ volatile bool flag_1000ms_telemetry = false;
 volatile uint16_t count_100ms = 0;
 volatile uint16_t count_500ms = 0;
 volatile uint16_t count_1000ms = 0;
+
+volatile char rx_buffer[35];
+volatile uint8_t rx_index = 0;
 
 void Init_LEDs(void);
 
@@ -94,6 +100,79 @@ int main(void)
 
     while (1)
     {
+        if (kLPUART_RxDataRegFullFlag & LPUART_GetStatusFlags(LPUART0))
+        {
+            char c = LPUART_ReadByte(LPUART0);
+            if (c == '\n' || c == '\r')
+            {
+                if (rx_index > 0)
+                {
+                    rx_buffer[rx_index] = '\0';
+
+                    if (strcmp((char*)rx_buffer, "STATUS") == 0)
+                    {
+                        PRINTF("t=%d;ADC=%d;PCT=%d;THR=%d;MODE=%s;ALARM=%d\r\n",
+                            milisegundos_totales,
+                            valor_bruto,
+                            PCT,
+                            THR,
+                            system_state == RUN ? "RUN" : "PAUSE",
+                            GPIO_PinRead(GPIO3, 31));
+                    }
+                    else if (strcmp((char*)rx_buffer, "START") == 0)
+                    {
+                        system_state = RUN;
+                        if (PCT >= THR) {
+                            GPIO_PinWrite(GPIO3, 31, 1); // Encender LED de Alarma
+                        } else {
+                            GPIO_PinWrite(GPIO3, 31, 0); // Apagar LED de Alarma
+                        }
+                        PRINTF("OK RUN\r\n");
+                    }
+                    else if (strcmp((char*)rx_buffer, "STOP") == 0)
+                    {
+                        system_state = PAUSE;
+                        GPIO_PinWrite(GPIO3, 31, 0); // Apagar LED de Alarma
+                        PRINTF("OK PAUSE\r\n");
+                    }
+                    else if (strncmp((char*)rx_buffer, "THR ", 4) == 0)
+                    {
+                        int new_thr = 0;
+                        char extra[10] = "";
+
+                        int items = sscanf((char*)rx_buffer, "THR %d%s", &new_thr, extra);
+                        if (items == 1 && new_thr >= 10 && new_thr <= 95)
+                        {
+                            THR = (uint8_t)new_thr;
+                            PRINTF("OK THR=%d\r\n", THR);
+                        }
+                        else
+                        {
+                            PRINTF("ERR\r\n");
+                        }
+                    }
+                    else
+                    {
+                        PRINTF("ERR\r\n");
+                    }
+
+                    memset((void*)rx_buffer, 0, sizeof(rx_buffer));
+                    rx_index = 0;
+                }
+            }
+            else
+            {
+                if (!(rx_index == 0 && (c == ' ' || c == '\n' || c == '\r')))
+                {
+                    if (rx_index < 32) 
+                    {
+                        rx_buffer[rx_index] = c;
+                        rx_index++;
+                    }
+                }
+            }
+        }
+
         if (boton_presionado)
         {
             if (system_state == RUN) {
@@ -156,9 +235,7 @@ int main(void)
             
             flag_1000ms_telemetry = false;
         } 
-    }
-        
-    
+    }     
 }  
 
 void Init_Hardware_Base(void)
