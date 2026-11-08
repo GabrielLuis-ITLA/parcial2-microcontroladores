@@ -11,11 +11,25 @@
 #include "fsl_lpadc.h"
 
 #define UMBRAL_REBOTES 30
-#define CTIMER_FREQ_1MS (96000000/1000)
+#define CTIMER_FREQ_1MS (12000000/1000)
 
 volatile uint32_t milisegundos_totales = 0;
 volatile uint8_t contador_rebotes = 0;
 volatile bool boton_presionado = false;
+volatile uint16_t valor_bruto = 0;
+volatile uint8_t PCT = 0;
+volatile uint8_t THR = 70; // Umbral del 70%
+
+typedef enum { PAUSE, RUN } system_state_t;
+volatile system_state_t system_state = RUN;
+
+volatile bool flag_100ms_adc = false;
+volatile bool flag_500ms_led = false;
+volatile bool flag_1000ms_telemetry = false;
+
+volatile uint16_t count_100ms = 0;
+volatile uint16_t count_500ms = 0;
+volatile uint16_t count_1000ms = 0;
 
 void Init_LEDs(void);
 
@@ -29,6 +43,27 @@ void CTIMER0_IRQHandler(void)
     CTIMER_ClearStatusFlags(CTIMER0, banderas);
 
     milisegundos_totales++;
+
+    count_100ms++;
+    if (count_100ms >= 100)
+    {
+        count_100ms = 0;
+        flag_100ms_adc = true;
+    }
+
+    count_500ms++;
+    if (count_500ms >= 500)
+    {
+        count_500ms = 0;
+        flag_500ms_led = true;
+    }
+
+    count_1000ms++;
+    if (count_1000ms >= 1000)
+    {
+        count_1000ms = 0;
+        flag_1000ms_telemetry = true;
+    }   
 
     if (GPIO_PinRead(GPIO1, 7) == 0)
     {
@@ -61,20 +96,69 @@ int main(void)
     {
         if (boton_presionado)
         {
-            LPADC_DoSoftwareTrigger(ADC1, 1U);
-            lpadc_conv_result_t resultado_adc;
+            if (system_state == RUN) {
+                system_state = PAUSE;
 
-            while (!LPADC_GetConvResult(ADC1, &resultado_adc))
+                GPIO_PinWrite(GPIO3, 31, 0); // Apagar LED de Alarma
+            } else {
+                system_state = RUN;
+                if (PCT >= THR) {
+                    GPIO_PinWrite(GPIO3, 31, 1); // Encender LED de Alarma
+                } else {
+                    GPIO_PinWrite(GPIO3, 31, 0); // Apagar LED de Alarma
+                }
+            }
+            boton_presionado = false;
+        }
+
+        if (flag_100ms_adc)
+        {
+            LPADC_DoSoftwareTrigger(ADC1, 1U);
+            lpadc_conv_result_t result_adc;
+
+            while (!LPADC_GetConvResult(ADC1, &result_adc)) 
             {
             }
-                uint16_t valor_bruto = resultado_adc.convValue >> 3;
-                PRINTF("Boton presionado! Valor Potenciometro: %d\r\n", valor_bruto);
 
-                GPIO_PortToggle(GPIO3, 1u << 1); // Toggle LED de Actividad
-                boton_presionado = false;
-            
+            valor_bruto = result_adc.convValue >> 3U;
+            PCT = (100 * valor_bruto) / 4095;
+
+            if (system_state == RUN) {
+                if (PCT >= THR) {
+                    GPIO_PinWrite(GPIO3, 31, 1); // Encender LED de Alarma
+                } else if (PCT < (THR - 5)) {
+                    GPIO_PinWrite(GPIO3, 31, 0); // Apagar LED de Alarma
+                }
+            }
+
+            else {
+                GPIO_PinWrite(GPIO3, 31, 0); // Apagar LED de Alarma
+            }
+
+            flag_100ms_adc = false;
         }
+        
+        if (flag_500ms_led)
+        {
+            GPIO_PortToggle(GPIO3, 1U << 1U);
+            flag_500ms_led = false;
+        }
+
+        if (flag_1000ms_telemetry)
+        {
+            PRINTF("t=%d;ADC=%d;PCT=%d;THR=%d;MODE=%s;ALARM=%d\r\n", 
+            milisegundos_totales, 
+            valor_bruto, 
+            PCT, 
+            THR, 
+            system_state == RUN ? "RUN" : "PAUSE", 
+            GPIO_PinRead(GPIO3, 31));
+            
+            flag_1000ms_telemetry = false;
+        } 
     }
+        
+    
 }  
 
 void Init_Hardware_Base(void)
@@ -95,7 +179,6 @@ void Init_Hardware_Base(void)
     BOARD_InitPeripherals();
 }
 
-
 void Init_Boton_SW2(void)
 {
     gpio_pin_config_t sw_config = {
@@ -104,7 +187,6 @@ void Init_Boton_SW2(void)
     };
     GPIO_PinInit(GPIO1, 7, &sw_config);
 }
-
 
 void Init_Filtro_Ctimer(void)
 {

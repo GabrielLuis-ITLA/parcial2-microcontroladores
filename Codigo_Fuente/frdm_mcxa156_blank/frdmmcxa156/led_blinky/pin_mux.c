@@ -16,6 +16,7 @@ pin_labels:
 - {pin_num: '63', pin_signal: P3_12/LPUART2_RTS_B/LPUART3_TXD/CT1_MAT2/PWM0_X0/FLEXIO0_D20/PWM1_A2, label: LED_RED, identifier: LED_RED}
 - {pin_num: '100', pin_signal: P1_7/TRIG_OUT2/LPUART2_CTS_B/CT_INP7/CT4_MAT1/FLEXIO0_D15, label: SW2, identifier: SW2}
 - {pin_num: '72', pin_signal: P3_1/TRIG_IN1/LPUART3_TXD/CT_INP17/PWM0_B0/FLEXIO0_D9/PWM1_X1, label: LED_ACTIVIDAD, identifier: LED_ACTIVIDAD}
+- {pin_num: '48', pin_signal: P3_31/TRIG_IN10/LPI2C3_SDAS/LPUART4_CTS_B/CT0_MAT3/FLEXIO0_D31, label: LED_ALARMA, identifier: LED_ALARMA}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -49,6 +50,7 @@ BOARD_InitPins:
   - {pin_num: '79', peripheral: LPUART0, signal: TX, pin_signal: P0_3/TDI/LPUART0_TXD/LPSPI0_SDO/CT0_MAT1/UTICK_CAP1/FLEXIO0_D3/CMP0_OUT}
   - {pin_num: '72', peripheral: GPIO3, signal: 'GPIO, 1', pin_signal: P3_1/TRIG_IN1/LPUART3_TXD/CT_INP17/PWM0_B0/FLEXIO0_D9/PWM1_X1, direction: OUTPUT}
   - {pin_num: '3', peripheral: ADC1, signal: 'A, 8', pin_signal: P1_10/LPUART1_RTS_B/LPI2C2_SDAS/CT2_MAT0/FLEXIO0_D18}
+  - {pin_num: '48', peripheral: GPIO3, signal: 'GPIO, 31', pin_signal: P3_31/TRIG_IN10/LPI2C3_SDAS/LPUART4_CTS_B/CT0_MAT3/FLEXIO0_D31, direction: OUTPUT}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -142,6 +144,16 @@ void BOARD_InitPins(void)
                      /* Input Buffer Enable: Enables. */
                      | PORT_PCR_IBE(PCR_IBE_ibe1));
 
+    /* PORT3_31 (pin 48) is configured as P3_31 */
+    PORT_SetPinMux(BOARD_INITPINS_LED_ALARMA_PORT, BOARD_INITPINS_LED_ALARMA_PIN, kPORT_MuxAlt0);
+
+    PORT3->PCR[31] = ((PORT3->PCR[31] &
+                       /* Mask bits to zero which are setting */
+                       (~(PORT_PCR_IBE_MASK)))
+
+                      /* Input Buffer Enable: Enables. */
+                      | PORT_PCR_IBE(PCR_IBE_ibe1));
+
     gpio_pin_config_t SW2_config = {
         .pinDirection = kGPIO_DigitalInput,
         .outputLogic = 0U
@@ -155,6 +167,13 @@ void BOARD_InitPins(void)
     };
     /* Initialize GPIO functionality on pin PIO3_1 (pin 72)  */
     GPIO_PinInit(BOARD_INITPINS_LED_ACTIVIDAD_GPIO, BOARD_INITPINS_LED_ACTIVIDAD_PIN, &LED_ACTIVIDAD_config);
+
+    gpio_pin_config_t LED_ALARMA_config = {
+        .pinDirection = kGPIO_DigitalOutput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PIO3_31 (pin 48)  */
+    GPIO_PinInit(BOARD_INITPINS_LED_ALARMA_GPIO, BOARD_INITPINS_LED_ALARMA_PIN, &LED_ALARMA_config);
 }
 /***********************************************************************************************************************
  * EOF

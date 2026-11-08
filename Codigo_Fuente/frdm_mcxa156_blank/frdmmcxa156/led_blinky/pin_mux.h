@@ -59,6 +59,21 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_LED_ACTIVIDAD_PIN_MASK (1U << 1U)      /*!<@brief PORT pin mask */
                                                               /* @} */
 
+/*! @name PORT3_31 (number 48), LED_ALARMA
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITPINS_LED_ALARMA_GPIO GPIO3                /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITPINS_LED_ALARMA_INIT_GPIO_VALUE 0U        /*!<@brief GPIO output initial state */
+#define BOARD_INITPINS_LED_ALARMA_GPIO_PIN 31U              /*!<@brief GPIO pin number */
+#define BOARD_INITPINS_LED_ALARMA_GPIO_PIN_MASK (1U << 31U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define BOARD_INITPINS_LED_ALARMA_PORT PORT3                /*!<@brief PORT peripheral base pointer */
+#define BOARD_INITPINS_LED_ALARMA_PIN 31U                   /*!<@brief PORT pin number */
+#define BOARD_INITPINS_LED_ALARMA_PIN_MASK (1U << 31U)      /*!<@brief PORT pin mask */
+                                                            /* @} */
+
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
  *
